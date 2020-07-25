@@ -1,0 +1,2703 @@
+MapFormat: 11
+
+RequiresMod: ra
+
+Title: Purgatory 5
+
+Author: American Blunt
+
+Tileset: TEMPERAT
+
+MapSize: 82,82
+
+Bounds: 1,1,80,80
+
+Visibility: Lobby
+
+Categories: Minigame
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: allies
+	PlayerReference@Monsters:
+		Name: Monsters
+		Faction: soviet
+		Color: 982F2F
+		LockTeam: True
+		Team: 2
+		Allies: Aliens
+		Enemies: Multi0, Multi1, Multi2, Multi3
+	PlayerReference@Aliens:
+		Name: Aliens
+		Faction: soviet
+		Color: 2E8400
+		LockTeam: True
+		Team: 2
+		Allies: Monsters
+		Enemies: Multi0, Multi1, Multi2, Multi3
+	PlayerReference@Multi0:
+		Name: Multi0
+		Playable: True
+		Faction: Random
+		LockTeam: True
+		Team: 1
+		Allies: Multi1, Multi2, Multi3
+		Enemies: Monsters, Aliens
+	PlayerReference@Multi1:
+		Name: Multi1
+		Playable: True
+		Faction: Random
+		LockTeam: True
+		Team: 1
+		Allies: Multi0, Multi2, Multi3
+		Enemies: Monsters, Aliens
+	PlayerReference@Multi2:
+		Name: Multi2
+		Playable: True
+		Faction: Random
+		LockTeam: True
+		Team: 1
+		Allies: Multi0, Multi1, Multi3
+		Enemies: Monsters, Aliens
+	PlayerReference@Multi3:
+		Name: Multi3
+		Playable: True
+		Faction: Random
+		LockTeam: True
+		Team: 1
+		Allies: Multi0, Multi1, Multi2
+		Enemies: Monsters, Aliens
+
+Actors:
+	MotherShipWaypoint: waypoint
+		Owner: Neutral
+		Location: 40,38
+	WaypointMiddle: waypoint
+		Owner: Neutral
+		Location: 41,40
+	Actor103: tc04
+		Owner: Neutral
+		Location: 72,79
+	Actor82: tc01
+		Owner: Neutral
+		Location: 6,77
+	Actor314: tc04
+		Owner: Neutral
+		Location: 39,79
+	Actor326: tc04
+		Owner: Neutral
+		Location: 1,15
+	Actor324: tc04
+		Owner: Neutral
+		Location: 79,67
+	Actor200: tc04
+		Owner: Neutral
+		Location: 15,75
+	Actor207: tc04
+		Owner: Neutral
+		Location: 15,79
+	Actor211: tc04
+		Owner: Neutral
+		Location: 10,80
+	Actor325: tc04
+		Owner: Neutral
+		Location: 1,5
+	Actor221: v17
+		Owner: Neutral
+		Location: 79,9
+	Actor322: v18
+		Owner: Neutral
+		Location: 80,9
+	Actor92: t10
+		Owner: Neutral
+		Location: 26,17
+	Actor94: t15
+		Owner: Neutral
+		Location: 44,22
+	Actor95: t13
+		Owner: Neutral
+		Location: 40,23
+	Actor96: t15
+		Owner: Neutral
+		Location: 45,23
+	Actor97: t10
+		Owner: Neutral
+		Location: 17,24
+	Actor99: t13
+		Owner: Neutral
+		Location: 31,24
+	Actor106: t13
+		Owner: Neutral
+		Location: 43,24
+	Actor107: t14
+		Owner: Neutral
+		Location: 35,25
+	Actor108: t11
+		Owner: Neutral
+		Location: 38,25
+	Actor109: t11
+		Owner: Neutral
+		Location: 48,25
+	Actor110: t13
+		Owner: Neutral
+		Location: 52,25
+	Actor111: t13
+		Owner: Neutral
+		Location: 31,26
+	Actor112: t14
+		Owner: Neutral
+		Location: 42,26
+	Actor113: t10
+		Owner: Neutral
+		Location: 45,26
+	Actor115: t13
+		Owner: Neutral
+		Location: 27,27
+	Actor116: t11
+		Owner: Neutral
+		Location: 36,27
+	Actor118: t14
+		Owner: Neutral
+		Location: 49,27
+	Actor120: t15
+		Owner: Neutral
+		Location: 32,28
+	Actor124: t13
+		Owner: Neutral
+		Location: 57,29
+	Actor126: t13
+		Owner: Neutral
+		Location: 27,31
+	Actor128: t15
+		Owner: Neutral
+		Location: 57,31
+	Actor129: t15
+		Owner: Neutral
+		Location: 28,32
+	Actor130: t14
+		Owner: Neutral
+		Location: 30,32
+	Actor133: t14
+		Owner: Neutral
+		Location: 50,32
+	Actor134: t14
+		Owner: Neutral
+		Location: 55,32
+	Actor135: t15
+		Owner: Neutral
+		Location: 26,33
+	Actor137: t11
+		Owner: Neutral
+		Location: 53,34
+	Actor138: t14
+		Owner: Neutral
+		Location: 21,35
+	Actor141: t13
+		Owner: Neutral
+		Location: 25,35
+	Actor144: t13
+		Owner: Neutral
+		Location: 53,36
+	Actor145: t14
+		Owner: Neutral
+		Location: 57,36
+	Actor146: t11
+		Owner: Neutral
+		Location: 26,37
+	Actor152: t14
+		Owner: Neutral
+		Location: 22,38
+	Actor159: t15
+		Owner: Neutral
+		Location: 54,39
+	Actor162: t13
+		Owner: Neutral
+		Location: 24,40
+	Actor163: t13
+		Owner: Neutral
+		Location: 29,40
+	Actor164: t14
+		Owner: Neutral
+		Location: 51,40
+	Actor165: t15
+		Owner: Neutral
+		Location: 26,41
+	Actor167: t14
+		Owner: Neutral
+		Location: 54,41
+	Actor170: t11
+		Owner: Neutral
+		Location: 57,43
+	Actor172: t14
+		Owner: Neutral
+		Location: 24,44
+	Actor175: t15
+		Owner: Neutral
+		Location: 50,44
+	Actor178: t14
+		Owner: Neutral
+		Location: 26,45
+	Actor179: t14
+		Owner: Neutral
+		Location: 52,45
+	Actor180: t13
+		Owner: Neutral
+		Location: 55,45
+	Actor182: t13
+		Owner: Neutral
+		Location: 38,48
+	Actor183: t10
+		Owner: Neutral
+		Location: 52,48
+	Actor186: t14
+		Owner: Neutral
+		Location: 29,49
+	Actor187: t13
+		Owner: Neutral
+		Location: 33,49
+	Actor188: t13
+		Owner: Neutral
+		Location: 47,49
+	Actor189: t13
+		Owner: Neutral
+		Location: 25,50
+	Actor192: t11
+		Owner: Neutral
+		Location: 42,50
+	Actor193: t14
+		Owner: Neutral
+		Location: 50,50
+	Actor194: t15
+		Owner: Neutral
+		Location: 30,51
+	Actor195: t15
+		Owner: Neutral
+		Location: 40,51
+	Actor199: t15
+		Owner: Neutral
+		Location: 34,52
+	Actor204: t13
+		Owner: Neutral
+		Location: 24,53
+	Actor208: t11
+		Owner: Neutral
+		Location: 40,53
+	Actor209: t13
+		Owner: Neutral
+		Location: 48,53
+	Actor220: t13
+		Owner: Neutral
+		Location: 36,54
+	Actor222: t14
+		Owner: Neutral
+		Location: 37,54
+	Actor224: t15
+		Owner: Neutral
+		Location: 44,54
+	Actor227: t15
+		Owner: Neutral
+		Location: 49,54
+	Actor228: t11
+		Owner: Neutral
+		Location: 52,54
+	Actor231: t14
+		Owner: Neutral
+		Location: 33,56
+	Actor237: t11
+		Owner: Neutral
+		Location: 35,62
+	SPMulti0: mpspawn
+		Owner: Neutral
+		Location: 64,17
+	SPMulti1: mpspawn
+		Owner: Neutral
+		Location: 64,64
+	SPMulti2: mpspawn
+		Owner: Neutral
+		Location: 17,17
+	SPMulti3: mpspawn
+		Owner: Neutral
+		Location: 16,65
+	Egg: monsteregg
+		Owner: Monsters
+		Location: 40,40
+	Egg1: monsteregg
+		Owner: Monsters
+		Location: 37,37
+	Egg3: monsteregg
+		Owner: Monsters
+		Location: 37,43
+	Egg5: monsteregg
+		Owner: Monsters
+		Location: 43,43
+	Egg7: monsteregg
+		Owner: Monsters
+		Location: 43,37
+	MonsterWaypoint: waypoint
+		Owner: Neutral
+		Location: 40,40
+	MonsterWaypoint1: waypoint
+		Owner: Neutral
+		Location: 37,37
+	MonsterWaypoint3: waypoint
+		Owner: Neutral
+		Location: 37,43
+	MonsterWaypoint5: waypoint
+		Owner: Neutral
+		Location: 43,43
+	MonsterWaypoint7: waypoint
+		Owner: Neutral
+		Location: 43,37
+	Waypoint: waypoint
+		Owner: Neutral
+		Location: 29,29
+	Waypoint1: waypoint
+		Owner: Neutral
+		Location: 52,29
+	Waypoint2: waypoint
+		Owner: Neutral
+		Location: 29,52
+	Waypoint3: waypoint
+		Owner: Neutral
+		Location: 52,52
+	Actor242: t15
+		Owner: Neutral
+		Location: 54,29
+	Actor243: t11
+		Owner: Neutral
+		Location: 30,54
+	Actor244: t11
+		Owner: Neutral
+		Location: 30,46
+	Actor245: t15
+		Owner: Neutral
+		Location: 41,28
+	Actor246: t15
+		Owner: Neutral
+		Location: 47,29
+	Actor247: t15
+		Owner: Neutral
+		Location: 35,21
+	Actor248: t13
+		Owner: Neutral
+		Location: 23,31
+	Actor249: t13
+		Owner: Neutral
+		Location: 45,57
+	Actor250: t10
+		Owner: Neutral
+		Location: 52,30
+	Actor251: t10
+		Owner: Neutral
+		Location: 54,51
+	Actor252: t10
+		Owner: Neutral
+		Location: 27,53
+	Actor253: t10
+		Owner: Neutral
+		Location: 29,30
+	MonsterMissionAccomplished: sniper
+		Owner: Monsters
+		Location: 40,0
+		SubCell: 3
+		Facing: 92
+		TurretFacing: 92
+	AlienMissionAccomplished: sniper
+		Owner: Aliens
+		Location: 41,0
+		SubCell: 3
+		Facing: 92
+		TurretFacing: 92
+	Actor262: gmine
+		Owner: Neutral
+		Location: 17,40
+	Actor263: gmine
+		Owner: Neutral
+		Location: 63,39
+	Actor264: gmine
+		Owner: Neutral
+		Location: 40,17
+	Actor265: gmine
+		Owner: Neutral
+		Location: 41,64
+	Actor218: tc01
+		Owner: Neutral
+		Location: 74,58
+	Actor235: t11
+		Owner: Neutral
+		Location: 74,21
+	Actor234: tc01
+		Owner: Neutral
+		Location: 55,3
+	Actor236: t06
+		Owner: Neutral
+		Location: 4,38
+	Actor184: fcom
+		Owner: Neutral
+		Location: 40,2
+	Actor232: mine
+		Owner: Neutral
+		Location: 50,12
+	Actor255: tc04
+		Owner: Neutral
+		Location: 47,1
+	Actor198: mine
+		Owner: Neutral
+		Location: 30,13
+	Actor213: fcom
+		Owner: Neutral
+		Location: 39,76
+	Actor261: tc04
+		Owner: Neutral
+		Location: 27,78
+	Actor266: tc04
+		Owner: Neutral
+		Location: 29,79
+	Actor267: tc04
+		Owner: Neutral
+		Location: 24,80
+	Actor268: tc05
+		Owner: Neutral
+		Location: 60,76
+	Actor269: tc04
+		Owner: Neutral
+		Location: 54,76
+	Actor270: tc04
+		Owner: Neutral
+		Location: 50,78
+	Actor271: tc04
+		Owner: Neutral
+		Location: 47,79
+	Actor272: tc04
+		Owner: Neutral
+		Location: 57,79
+	Actor217: mine
+		Owner: Neutral
+		Location: 50,69
+	Actor216: mine
+		Owner: Neutral
+		Location: 30,70
+	Actor274: tc04
+		Owner: Neutral
+		Location: 1,57
+	Actor275: tc04
+		Owner: Neutral
+		Location: 4,58
+	Actor191: miss
+		Owner: Neutral
+		Location: 77,39
+	Actor196: tc04
+		Owner: Neutral
+		Location: 77,44
+	Actor226: tc04
+		Owner: Neutral
+		Location: 79,45
+	Actor254: tc04
+		Owner: Neutral
+		Location: 78,26
+	Actor276: v17
+		Owner: Neutral
+		Location: 79,29
+	Actor277: v18
+		Owner: Neutral
+		Location: 80,29
+	Actor278: tc04
+		Owner: Neutral
+		Location: 79,29
+	Actor279: tc04
+		Owner: Neutral
+		Location: 78,32
+	Actor190: tc04
+		Owner: Neutral
+		Location: 78,10
+	Actor206: oilb
+		Owner: Neutral
+		Location: 79,14
+	Actor210: oilb
+		Owner: Neutral
+		Location: 67,1
+	Actor212: tc04
+		Owner: Neutral
+		Location: 63,1
+	Actor233: miss
+		Owner: Neutral
+		Location: 2,39
+	Actor203: oilb
+		Owner: Neutral
+		Location: 1,64
+	Actor238: oilb
+		Owner: Neutral
+		Location: 13,79
+	Actor239: mine
+		Owner: Neutral
+		Location: 13,50
+	Actor240: tc04
+		Owner: Neutral
+		Location: 29,-1
+	Actor241: tc04
+		Owner: Neutral
+		Location: 28,1
+	Actor256: tc04
+		Owner: Neutral
+		Location: 0,29
+	Actor257: tc04
+		Owner: Neutral
+		Location: 1,31
+	Actor201: tc04
+		Owner: Neutral
+		Location: 3,44
+	Actor214: tc04
+		Owner: Neutral
+		Location: 1,47
+	Actor215: tc04
+		Owner: Neutral
+		Location: 4,48
+	Actor258: oilb
+		Owner: Neutral
+		Location: 13,1
+	Actor259: oilb
+		Owner: Neutral
+		Location: 1,14
+	Actor273: tc04
+		Owner: Neutral
+		Location: 15,2
+	Actor219: mine
+		Owner: Neutral
+		Location: 13,32
+	Actor280: mine
+		Owner: Neutral
+		Location: 69,31
+	Actor281: t11
+		Owner: Neutral
+		Location: 70,36
+	Actor282: oilb
+		Owner: Neutral
+		Location: 79,66
+	Actor283: oilb
+		Owner: Neutral
+		Location: 65,79
+	Actor176: gmine
+		Owner: Neutral
+		Location: 38,64
+	Actor177: mine
+		Owner: Neutral
+		Location: 48,68
+	Actor181: mine
+		Owner: Neutral
+		Location: 28,69
+	Actor185: mine
+		Owner: Neutral
+		Location: 11,51
+	Actor197: mine
+		Owner: Neutral
+		Location: 11,31
+	Actor205: mine
+		Owner: Neutral
+		Location: 31,11
+	Actor223: gmine
+		Owner: Neutral
+		Location: 17,42
+	Actor225: gmine
+		Owner: Neutral
+		Location: 42,17
+	Actor229: gmine
+		Owner: Neutral
+		Location: 63,37
+	Actor230: mine
+		Owner: Neutral
+		Location: 71,32
+	Actor284: mine
+		Owner: Neutral
+		Location: 50,10
+	Actor202: mine
+		Owner: Neutral
+		Location: 68,49
+	Actor260: mine
+		Owner: Neutral
+		Location: 70,50
+
+Rules:
+	World:
+		MissionData:
+			Briefing: Mission:\n\nDestroy the Eggs in the middle which spawn hellish monsters!\n\nA map by American Blunt\n\nVersion 4
+		LuaScript:
+			Scripts: Purgatory.lua
+		CrateSpawner:
+			Enabled: False
+			Locked: True
+			Minimum: 0
+		ScriptLobbyDropdown@difficulty:
+			ID: difficulty
+			Label: Difficulty
+			Values:
+				easy: Easy
+				normal: Medium
+				hard: Hard
+			Default: normal
+		MapOptions:
+			TechLevelLocked: True
+			TechLevel: unrestricted
+			ShortGameLocked: True
+			ShortGameEnabled: True
+		SpawnMPUnits:
+			Locked: True
+		FlashPaletteEffect@LIGHTNINGSTRIKE:
+			Type: LightningStrike
+		WeatherOverlay:
+			ParticleDensityFactor: 15
+			UseSquares: false
+			WindTick: 150, 550
+			ScatterDirection: 1, 2
+			Gravity: 8.00, 12.00
+			SwingOffset: 0, 0
+			SwingSpeed: 0, 0
+			SwingAmplitude: 0, 0
+			ParticleColors: 304074, 28386C, 202C60, 182C54
+			LineTailAlphaValue: 200
+			ParticleSize: 1, 2
+		GlobalLightingPaletteEffect:
+			Red: 0.7
+			Green: 0.7
+			Blue: 1.1
+			Ambient: 1.00
+		PaletteFromFile@spidercostume:
+			Name: spidercostume
+			Filename: spideypalette.pal
+			Tileset: temperat
+			ShadowIndex: 4
+			AllowModifiers: false
+		PaletteFromFile@pinky:
+			Name: pinky
+			Filename: pinky.pal
+			ShadowIndex: 1
+			AllowModifiers: false
+		MusicPlaylist:
+			BackgroundMusic: rain
+			DefeatMusic: lose
+	Player:
+		ConquestVictoryConditions:
+			Objective: Destroy the Egg Spawns in the middle!
+			NotificationDelay: 2000
+		PlayerExperience:
+		MissionObjectives:
+			GameOverDelay: 8000
+	PDOX:
+		Tooltip:
+			Name: Rift Generator
+		Buildable:
+			Description: Teleports a group of units across the\nmap for a short time.\nKills a group of Monsters.\nRequires power to operate.\n  Special Ability: Chronoshift\nMaximum 1 can be built.
+		ChronoshiftPower@chronoshift:
+			OrderName: Chronoshift
+			Prerequisites: !pdox.germany
+			Icon: chrono
+			ChargeTime: 120
+			Description: Rift Generator
+			LongDesc: Kills a group of monsters.\nTeleports a group of units across\nthe map for 20 seconds.
+			SelectTargetSound: selecttarget.aud
+			InsufficientPowerSound: lowpower.aud
+			BeginChargeSound: chronospherecharging.aud
+			EndChargeSound: chronosphereready.aud
+			Duration: 20
+			KillCargo: yes
+			DisplayRadarPing: True
+		ChronoshiftPower@advancedchronoshift:
+			OrderName: AdvancedChronoshift
+			Prerequisites: pdox.germany
+			Icon: chrono
+			ChargeTime: 120
+			Description: Advanced Rift Generator
+			LongDesc: Kills a group of monsters.\nTeleports a large group of units across\nthe map for 20 seconds.
+			SelectTargetSound: selecttarget.aud
+			InsufficientPowerSound: lowpower.aud
+			BeginChargeSound: chronospherecharging.aud
+			EndChargeSound: chronosphereready.aud
+			Duration: 20
+			KillCargo: yes
+			DisplayRadarPing: True
+			Range: 2
+	ATEK:
+		GpsPower:
+			Icon: gps
+			OneShot: yes
+			ChargeTime: 480
+			Description: GPS Satellite
+			LongDesc: Reveals map terrain and provides tactical\ninformation.
+			RevealDelay: 15
+			LaunchSound: satlaunched.aud
+			DisplayTimer: True
+	IRON:
+		Tooltip:
+			Name: Siege Barrier
+		GrantExternalConditionPower@IRONCURTAIN:
+			Icon: invuln
+			ChargeTime: 120
+			Description: Invulnerability
+			LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
+			Duration: 500
+			SelectTargetSound: SelectTarget
+			InsufficientPowerSound: LowPower
+			BeginChargeSound: IronCurtainReady
+			EndChargeSound: IronCurtainCharging
+			DisplayRadarPing: True
+			Condition: invulnerability
+	MSLO:
+		NukePower:
+			Cursor: nuke
+			Icon: abomb
+			ChargeTime: 540
+			Description: Atom Bomb
+			LongDesc: Launches a devastating atomic bomb\nat a target location.
+			BeginChargeSound: abombprepping.aud
+			EndChargeSound: abombready.aud
+			SelectTargetSound: selecttarget.aud
+			InsufficientPowerSound: lowpower.aud
+			IncomingSound: atombomblaunch.aud
+			LaunchSpeechNotification: AbombLaunchDetected
+			LaunchSound:
+			MissileWeapon: atomic
+			SpawnOffset: 0,427,0
+			DisplayTimer: True
+			DisplayBeacon: True
+			DisplayRadarPing: True
+			BeaconPoster: atomicon
+			CameraActor: camera
+			FlashType: Nuke
+	FCOM:
+		Capturable:
+			Types: building
+		CaptureManager:
+	MONSTEREGG:
+		Inherits: ^BasicBuilding
+		Huntable:
+		UpdatesPlayerStatistics:
+		Health:
+			HP: 200000
+		Valued:
+			Cost: 20000
+		Armor:
+			Type: Heavy
+		Selectable:
+			Bounds: 29,50
+		RepairableBuilding:
+			RepairStep: 700
+			PlayerExperience: 25
+		Tooltip:
+			Name: Egg
+		RenderSprites:
+			Image: godzillaegg
+		ShakeOnDeath:
+			Intensity: 50
+		SpawnActorOnDeath:
+			Actor: BOXES01
+			OwnerType: Killer
+		Explodes:
+			Type: Footprint
+			Weapon: UnitExplodePlane
+			EmptyWeapon: UnitExplodePlane
+	^Monster:
+		Inherits@1: ^ExistsInWorld
+		Inherits@3: ^IronCurtainable
+		WithSpriteControlGroupDecoration:
+		GivesBounty:
+			Percentage: 50
+		AppearsOnRadar:
+			UseLocation: yes
+		Valued:
+			Cost: 500
+		Buildable:
+			Queue: Infantry
+			BuildAtProductionType: Soldier
+			BuildPaletteOrder: 10
+			Prerequisites: ~disabled
+		Tooltip:
+			GenericName: Monster
+		Mobile:
+			SharesCell: false
+			Locomotor: foot
+			TurnSpeed: 8
+			Speed: 50
+		Health:
+			HP: 30000
+		HitShape:
+			Type: Circle
+				Radius: 488
+		Armor:
+			Type: None
+		RevealsShroud:
+			Range: 5c0
+		SelectionDecorations:
+		Selectable:
+			Bounds: 24,24,0,-4
+		AutoTarget:
+			InitialStance: AttackAnything
+			ScanRadius: 10
+		WithInfantryBody:
+			IdleSequences: idle
+			MinIdleWaitTicks: 12
+			MaxIdleWaitTicks: 50
+			StandSequences: idle
+			MoveSequence: run
+			DefaultAttackSequence: shoot
+		HiddenUnderFog:
+		DrawLineToTarget:
+		ActorLostNotification:
+		CombatDebugOverlay:
+		Guard:
+		Guardable:
+		BodyOrientation:
+		Huntable:
+		UpdatesPlayerStatistics:
+		AttackFrontal:
+			Voice: Action
+		AttackMove:
+			Voice: Action
+		WithMuzzleOverlay:
+		Targetable:
+			TargetTypes: Ground, Vehicle
+		WithDeathAnimation:
+			DeathSequencePalette: spidercostume
+			DeathPaletteIsPlayerPalette: False
+			DeathSequence: die
+			UseDeathTypeSuffix: false
+		ScriptTriggers:
+		AnnounceOnKill:
+		SelfHealing:
+			Step: 10
+			Ticks: 25
+			HealIfBelow: 1
+			DamageCooldown: 375
+		DeathSounds:
+			Voice: Die
+		Explodes:
+			Weapon: UnitExplodeSmall
+			EmptyWeapon: UnitExplodeSmall
+		Voiced:
+			VoiceSet: AntVoice
+		WithDamageOverlay:
+		CombatDebugOverlay:
+		KillsSelf:
+			RequiresCondition: invulnerability
+		Chronoshiftable:
+			ExplodeInstead: True
+	PVICE:
+		Inherits: ^Monster
+		Inherits@3: ^SpriteActor
+		Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+		Buildable:
+			Queue: Vehicle
+			BuildPaletteOrder: 203
+			BuildAtProductionType: Vehicle
+			Prerequisites: ~bio, dome
+			Description: Mutated humans that munch enemies. \n Strong vs Infantry.
+		Valued:
+			Cost: 100
+		Crushable:
+			CrushSound: squishy2.aud
+		Tooltip:
+			Name: Mutant
+		Selectable:
+			Voice: Select
+			Bounds: 18,18,-3,-2
+		Health:
+			HP: 14000
+		Armor:
+			Type: None
+		Mobile:
+			Voice: Move
+			Speed: 85
+		RevealsShroud:
+			Range: 5c0
+		Armament@PRIMARY:
+			Weapon: Munch
+		-Explodes:
+		AutoTarget:
+			InitialStance: AttackAnything
+			ScanRadius: 2
+		Targetable:
+			TargetTypes: Ground, Infantry
+		RenderSprites:
+			Image: pvice
+			Palette: spidercostume
+		WithDeathAnimation:
+			DeathSequence: die
+			DeathSequencePalette: player
+			CrushedSequence: die
+		WithInfantryBody:
+			IdleSequences: idle
+			DefaultAttackSequence: idle
+			MinIdleWaitTicks: 12
+			MaxIdleWaitTicks: 50
+			StandSequences: idle
+			MoveSequence: idle
+		Voiced:
+			VoiceSet: MutatedVoices
+			Volume: 3
+		AnnounceOnKill:
+			Voice: Kill
+		DeathSounds:
+			Voice: Die
+		AttackMove:
+			Voice: Action
+		ConditionManager:
+		-WithDamageOverlay:
+		Chronoshiftable:
+			ExplodeInstead: True
+	BSPI:
+		Inherits: ^Monster
+		Inherits@3: ^SpriteActor
+		Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+		Buildable:
+			Queue: Vehicle
+			BuildPaletteOrder: 204
+			BuildAtProductionType: Vehicle
+			Prerequisites: ~bio, dome
+			Description: This spiderbot shoots balls of\nflames at its victims.\nStrong vs Infantry.
+		Valued:
+			Cost: 100
+		Crushable:
+			CrushSound: squishy2.aud
+		Tooltip:
+			Name: Arachnotron
+		Selectable:
+			Voice: Select
+			Bounds: 24,24,0,-4
+		Health:
+			HP: 12800
+		Armor:
+			Type: Light
+		Mobile:
+			Voice: Move
+			Speed: 80
+		RevealsShroud:
+			Range: 5c0
+		Armament@PRIMARY:
+			Weapon: CannonBall
+			MuzzleSequence: muzzle
+			LocalOffset: 300, 0, 150
+			FireDelay: 1
+		-Explodes:
+		AutoTarget:
+		Targetable:
+		RenderSprites:
+			Image: bspi
+			Palette: spidercostume
+		WithDeathAnimation:
+			DeathSequence: die
+			DeathSequencePalette: spidercostume
+			CrushedSequence: die
+			CrushedSequencePalette: spidercostume
+		WithInfantryBody:
+			IdleSequences: idle
+			DefaultAttackSequence: idle
+			StandSequences: idle
+			MoveSequence: run
+		Voiced:
+			VoiceSet: ArachnotronVoices
+			Volume: 3
+		AnnounceOnKill:
+			Voice: Kill
+		DeathSounds:
+			Voice: Die
+		AttackMove:
+			Voice: Action
+		ConditionManager:
+		UpdatesPlayerStatistics:
+		-WithDamageOverlay:
+		Chronoshiftable:
+			ExplodeInstead: True
+	REVE:
+		Inherits: ^Monster
+		Inherits@3: ^SpriteActor
+		Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+		Buildable:
+			Queue: Vehicle
+			BuildPaletteOrder: 205
+			BuildAtProductionType: Vehicle
+			Prerequisites: ~bio, dome
+			Description: Shoots balls of fire killing\ngroups of infantry\nand damaging buildings \n Strong vs Infantry vs buildings
+		Valued:
+			Cost: 100
+		Tooltip:
+			Name: Revenant
+		Health:
+			HP: 20000
+		Armor:
+			Type: Heavy
+		Selectable:
+			Bounds: 20,32,0,-10
+			Voice: Select
+		Mobile:
+			Voice: Move
+			Speed: 70
+		RevealsShroud:
+			Range: 5c0
+		RenderSprites:
+			Image: reve
+			Palette: spidercostume
+		WithDeathAnimation:
+			DeathSequence: die
+			DeathSequencePalette: spidercostume
+		WithInfantryBody:
+			IdleSequences: idle
+			DefaultAttackSequence: shoot
+			StandSequences: idle
+			MoveSequence: run
+		Voiced:
+			VoiceSet: RevenantVoices
+			Volume: 3
+		AnnounceOnKill:
+			Voice: Kill
+		DeathSounds:
+			Voice: Die
+		AttackMove:
+			Voice: Move
+		ConditionManager:
+		-WithDamageOverlay:
+		Armament@PRIMARY:
+			Weapon: Fireball
+			LocalOffset: 150, 320, 700
+			FireDelay: 7
+		Armament@SECONDARY:
+			Weapon: Fireball
+			LocalOffset: 150, -320, 700
+			FireDelay: 7
+		Armament@THIRD:
+			Weapon: FireballAA
+			LocalOffset: 150, 320, 700
+			FireDelay: 7
+		Armament@FOURTH:
+			Weapon: FireballAA
+			LocalOffset: 150, -320, 700
+			FireDelay: 10
+		Chronoshiftable:
+			ExplodeInstead: True
+		DetectCloaked:
+	IMP:
+		Inherits: ^Monster
+		Inherits@3: ^SpriteActor
+		Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+		ConditionManager:
+		Buildable:
+			Queue: Vehicle
+			BuildAtProductionType: Vehicle
+			BuildPaletteOrder: 210
+			Prerequisites: fix, atek, ~vehicles.allies, ~techlevel.high, ~bio
+			Description: A Demon that shoots salvo of plasma balls.\nStrong vs buildings vs vehicles
+		BodyOrientation:
+		Valued:
+			Cost: 100
+		Tooltip:
+			Name: Imp
+		Health:
+			HP: 45000
+		Armor:
+			Type: Heavy
+		Voiced:
+			VoiceSet: ImpVoices
+			Volume: 3
+		Selectable:
+			Voice: Select
+			Bounds: 20,32,0,-10
+		AnnounceOnKill:
+			Voice: Kill
+		Mobile:
+			Voice: Move
+			Speed: 60
+			Locomotor: heavytracked
+		DeathSounds:
+			Voice: Die
+		AttackMove:
+			Voice: Action
+		RenderSprites:
+			Image: imp
+			Palette: spidercostume
+		-WithDamageOverlay:
+		Armament@PRIMARY:
+			Weapon: PlasmaPuff
+			LocalOffset: 256, 256, 600, 256, -256, 600
+		Chronoshiftable:
+			ExplodeInstead: True
+		DetectCloaked:
+	PINKY:
+		Inherits: ^Monster
+		Inherits@3: ^SpriteActor
+		Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+		ConditionManager:
+		Buildable:
+			Queue: Vehicle
+			BuildAtProductionType: Vehicle
+			BuildPaletteOrder: 215
+			Prerequisites: fix, atek, ~vehicles.allies, ~techlevel.high, ~bio
+			Description: A Demon that shoots devastation fireballs\nclearing waves of infantry and buildings in its path.\nStrong vs Everything
+		-WithDamageOverlay:
+		Valued:
+			Cost: 100
+		Tooltip:
+			Name: Demon
+		Health:
+			HP: 80000
+		Armor:
+			Type: Wood
+		Mobile:
+			Voice: Move
+			Speed: 55
+			Locomotor: heavytracked
+		Selectable:
+			Voice: Select
+			Bounds: 27,31,0,5
+		AutoTarget:
+		Armament@PRIMARY:
+			LocalOffset: 600,0,0
+			Weapon: FireBurst
+			FireDelay: 1
+		Voiced:
+			VoiceSet: PinkVoices
+			Volume: 10
+		AnnounceOnKill:
+			Voice: Kill
+		DeathSounds:
+			Voice: Die
+			VolumeMultiplier: 3
+		SelectionDecorations:
+		WithDeathAnimation:
+			DeathSequencePalette: pinky
+			DeathPaletteIsPlayerPalette: false
+		-Explodes:
+		RenderSprites:
+			Image: pinky
+			Scale: 1
+			Palette: pinky
+		BodyOrientation:
+		Chronoshiftable:
+			ExplodeInstead: True
+		DetectCloaked:
+	MANC:
+		Inherits: ^Monster
+		Inherits@3: ^SpriteActor
+		Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+		Buildable:
+			Queue: Vehicle
+			BuildAtProductionType: Vehicle
+			BuildPaletteOrder: 220
+			Prerequisites: fix, atek, ~vehicles.allies, ~techlevel.high, ~bio
+			Description: Spat out from hell. Shoots a deadly steams of flames.\nStrong vs Everything
+		Valued:
+			Cost: 100
+		Tooltip:
+			Name: Mancubus
+		Health:
+			HP: 100000
+		Armor:
+			Type: Heavy
+		Selectable:
+			Voice: Select
+			Bounds: 38,38,0,-7
+		Mobile:
+			TurnSpeed: 3
+			Voice: Move
+			Speed: 30
+			Locomotor: heavytracked
+		RevealsShroud:
+			Range: 10c0
+		AutoTarget:
+		RenderSprites:
+			Image: manc
+			Palette: spidercostume
+		Armament@PRIMARY:
+			Weapon: Flamethrower
+			LocalOffset: 1200, 570, 400
+		Armament@SECONDARY:
+			Weapon: Flamethrower
+			LocalOffset: 1200, -570, 400
+		WithDeathAnimation:
+			DeathSequence: die
+			DeathSequencePalette: spidercostume
+		WithInfantryBody:
+			IdleSequences: idle
+			DefaultAttackSequence: shoot
+			StandSequences: idle
+			MoveSequence: run
+		Voiced:
+			VoiceSet: MancubusVoices
+			Volume: 7
+		AnnounceOnKill:
+			Voice: Kill
+		DeathSounds:
+			Voice: Die
+			VolumeMultiplier: 5
+		AttackMove:
+			Voice: Move
+		ConditionManager:
+		-WithDamageOverlay:
+		Chronoshiftable:
+			ExplodeInstead: True
+		DetectCloaked:
+	MECHWARRIOR:
+		Inherits: ^Monster
+		Inherits@3: ^SpriteActor
+		Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+		Buildable:
+			Queue: Vehicle
+			BuildAtProductionType: Vehicle
+			BuildPaletteOrder: 230
+			Prerequisites: fix, atek, ~vehicles.allies, ~techlevel.high, ~bio
+			Description: Demon that self destructs sending\n a fiery shockwave nearest its victims.
+		Valued:
+			Cost: 100
+		Tooltip:
+			Name: Redeemer
+		Health:
+			HP: 80000
+		Armor:
+			Type: Heavy
+		Mobile:
+			Speed: 65
+			Voice: Move
+		Selectable:
+			Bounds: 35,39,0,0
+		RevealsShroud:
+			Range: 10c0
+		WithMuzzleOverlay:
+		Armament@PRIMARY:
+			Weapon: MiniGun
+			LocalOffset: 500,-400,300
+			Recoil: 20
+			MuzzleSequence: muzzle
+		Armament@SECONDARY:
+			Name: secondary
+			Weapon: MiniGun
+			LocalOffset: 500,400,300
+			Recoil: 22
+			MuzzleSequence: muzzle
+		WithDeathAnimation:
+			DeathSequence: die
+			UseDeathTypeSuffix: False
+		AttackMove:
+			Voice: Action
+		RenderSprites:
+			Image: mechwarrior.england
+			Scale: 1.1
+		Voiced:
+			VoiceSet: ExoMechVoices
+		DeathSounds:
+			Voice: Die
+		AnnounceOnKill:
+			Voice: Kill
+		Explodes:
+			Weapon: ArtilleryExplode
+			EmptyWeapon: UnitExplodeSmall
+			LoadedChance: 75
+	EXCITER:
+		Inherits: ^Monster
+		Inherits@3: ^SpriteActor
+		Inherits@2: ^ExistsInWorld
+		Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+		Buildable:
+			Queue: Vehicle
+			BuildAtProductionType: Vehicle
+			BuildPaletteOrder: 240
+			Prerequisites: fix, atek, ~vehicles.allies, ~techlevel.high, ~bio
+			Description: A Bio Mech unit that\n electrifies its victims with a Shock Shell\nStrong vs Infantry, Buildings\nWeak vs Vehicles
+		Valued:
+			Cost: 100
+		Tooltip:
+			Name: Eliminator
+		Health:
+			HP: 100000
+		Armor:
+			Type: Heavy
+		Mobile:
+			Speed: 28
+			Voice: Move
+		RevealsShroud:
+			Range: 15c0
+		Turreted:
+			TurnSpeed: 3
+			Offset: 0,0,0
+		Armament@PRIMARY:
+			Name: primary
+			Weapon: ShockShell
+			MuzzleSequence: muzzle
+			Recoil: 22
+			LocalOffset: 800,-150,600
+		Armament@SECONDARY:
+			Name: secondary
+			Weapon: ShockShell
+			MuzzleSequence: muzzle
+			Recoil: 22
+			LocalOffset: 800,150,600
+			FireDelay: 5
+		Armament@THIRD:
+			Weapon: EliminatorAA
+			MuzzleSequence: muzzle
+			Recoil: 22
+			LocalOffset: 800,-150,600
+		Armament@FOURTH:
+			Weapon: EliminatorAA
+			MuzzleSequence: muzzle
+			Recoil: 22
+			LocalOffset: 800,150,600
+		AttackMove:
+			Voice: Action
+		WithMuzzleOverlay:
+		WithSpriteTurret:
+		RenderSprites:
+			Image: exciter
+			Scale: 1
+		Voiced:
+			VoiceSet: EliminatorVoices
+		WithDeathAnimation:
+			UseDeathTypeSuffix: False
+		DeathSounds:
+			Voice: Die
+			VolumeMultiplier: 3
+		AnnounceOnKill:
+			Voice: Kill
+		BodyOrientation:
+		Explodes:
+			Weapon: ArtilleryExplode
+			EmptyWeapon: UnitExplodeSmall
+			LoadedChance: 75
+		Selectable:
+			Bounds: 53,38,0,-4
+			Voice: Select
+	TRIPOD:
+		Inherits: ^Monster
+		Inherits@3: ^SpriteActor
+		Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+		Buildable:
+			Queue: Vehicle
+			BuildPaletteOrder: 250
+			Prerequisites: fix, atek, ~vehicles.allies, ~techlevel.high, ~bio
+			BuildLimit: 1
+			Description: Alien War Hybrid.\n Strong vs Everything.
+		Valued:
+			Cost: 100
+		Tooltip:
+			Name: Tripod
+		Selectable:
+			Bounds: 55,90,0,25
+			Voice: Select
+		SelectionDecorations:
+		Health:
+			HP: 500000
+		Armor:
+			Type: Heavy
+		Mobile:
+			Speed: 17
+			Voice: Move
+			Locomotor: heavytracked
+		RevealsShroud:
+			Range: 20c0
+		RenderSprites:
+			Image: tripod
+			Scale: 1.5
+		AutoTarget:
+		Armament@PRIMARY:
+			Weapon: Lazer
+			LocalOffset: 100,650,0
+			Recoil: 22
+		Armament@SECONDARY:
+			Weapon: Lazer
+			LocalOffset: 100,-700,0
+			Recoil: 22
+		Armament@THIRD:
+			Weapon: Electricity
+			LocalOffset: 100,650,0
+			Recoil: 22
+			FireDelay: 3
+		Armament@FOURTH:
+			Weapon: Electricity
+			LocalOffset: 100,-700,0
+			Recoil: 22
+			FireDelay: 5
+		Armament@FIFTH:
+			Weapon: TripodPlasmaPuff
+			LocalOffset: -100,-200,0
+			Recoil: 22
+			FireDelay: 5
+		Armament@SIXTH:
+			Weapon: TripodPlasmaPuff
+			LocalOffset: -100,200,0
+			Recoil: 22
+			FireDelay: 7
+		Armament@SEVENTH:
+			Weapon: TripodPlasmaballAA
+			LocalOffset: -250,0,200
+			Recoil: 22
+		WithDeathAnimation:
+			DeathSequencePalette: spidercostume
+			DeathPaletteIsPlayerPalette: false
+		DeathSounds:
+			Voice: Die
+		ShakeOnDeath:
+			Intensity: 26
+		AnnounceOnKill:
+			Voice: Kill
+		DeathSounds:
+			Voice: Die
+			VolumeMultiplier: 5
+		Voiced:
+			VoiceSet: TripodVoices
+			Volume: 3
+		ThrowsShrapnel:
+			Weapons: TeslaZap
+			Pieces: 70, 100
+			Range: 3c0, 4c0
+		Explodes:
+			Weapon: TripodExplosion
+			EmptyWeapon: TripodExplosion
+		Chronoshiftable:
+			ExplodeInstead: false
+	MOTHERSHIP:
+		Inherits: ^BasicBuilding
+		RenderSprites:
+			Image: alienmothership
+			Scale: 1.2
+		Tooltip:
+			Name: Alien Mothership
+		Health:
+			HP: 1000000
+		Armor:
+			Type: Heavy
+		-Demolishable:
+		Building:
+			Footprint: xxx xxx xxx
+			Dimensions: 3,3
+			TerrainTypes: Clear,Road
+			RequiresBaseProvider: True
+		SoundOnDamageTransition:
+			DamagedSounds: kaboom1.aud
+			DestroyedSounds: kaboom22.aud
+		WithSpriteBody:
+		Explodes:
+			Type: Footprint
+			Weapon: MothershipExplosion
+			EmptyWeapon: MothershipExplosion
+		ShakeOnDeath:
+			Intensity: 150
+		CaptureNotification:
+		ProximityCaptor:
+			Types: Building
+		Guardable:
+			Range: 3c0
+		FrozenUnderFog:
+		FrozenUnderFogUpdatedByGps:
+	SNIPER:
+		-Targetable:
+		-Selectable:
+		Interactable:
+		MustBeDestroyed:
+			RequiredForShortGame: True
+		AutoTarget:
+			InitialStanceAI: HoldFire
+	BOXES01:
+		RenderSprites:
+			Image: crashsitefire
+		Tooltip:
+			Name: Fire
+	BOXES02:
+		RenderSprites:
+			Image: crashsitefire2
+		Tooltip:
+			Name: Fire
+	BOXES03:
+		RenderSprites:
+			Image: crashsitefire3
+		Tooltip:
+			Name: Fire
+	BOXES04:
+		RenderSprites:
+			Image: crashsitefire4
+		Tooltip:
+			Name: Fire
+	WEAPONSCRATE:
+		Inherits: ^Crate
+		RenderSprites:
+			Image: weaponscrate
+			Palette: spidercostume
+		Tooltip:
+			Name:
+		HealUnitsCrateAction:
+			Sound: NewTechnologyAcquired.aud
+			SelectionShares: 1
+			Sequence: fpower
+	FLARE:
+		Interactable:
+		Immobile:
+			OccupiesSpace: false
+		RevealsShroud:
+			Range: 0c0
+			Type: CenterPosition
+		RenderSprites:
+			Image: smokland
+			Scale: 1
+		WithSpriteBody:
+			StartSequence: open
+		BodyOrientation:
+			QuantizedFacings: 1
+		HiddenUnderFog:
+			Type: CenterPosition
+		Tooltip:
+			Name: Fire
+			ShowOwnerRow: false
+		SelectionDecorations:
+			RenderSelectionBars: False
+
+Sequences:
+	godzillaegg:
+		idle:
+			Start: 0
+			Length: *
+			Tick: 100
+		dead:
+			Start: 0
+		damaged-idle:
+			Start: 0
+			Length: *
+		make:
+			Start: 0
+			Length: *
+		icon: fturicon
+			Start: 0
+	pvice:
+		Inherits: vice
+		idle: vice
+			Length: *
+			Tick: 80
+		icon: zombicon
+			Start: 0
+		die: zombie
+			Start: 106
+			Length: 7
+			Tick: 200
+	vice:
+		idle: vice
+			Length: *
+			Tick: 80
+		icon: zombicon
+			Start: 0
+		die: zombie
+			Start: 106
+			Length: 7
+			Tick: 200
+	imp:
+		idle: imp_stand
+			Start: 0
+			Length: 1
+			Facings: 32
+			Offset: 0,-10
+			ZOffset: 150
+		run: imp_walk
+			Start: 0
+			Length: 10
+			Tick: 75
+			Facings: 32
+			Offset: 0,-10
+			ZOffset: 150
+		shoot: imp_punch
+			Start: 0
+			Length: 17
+			Facings: 16
+			Offset: 0,-10
+			ZOffset: 150
+		die: imp_death
+			Start: 50
+			Length: 25
+			Tick: 50
+			Facings: 1
+			Offset: 0,-10
+			ZOffset: 150
+		icon: zombicon
+			Start: 0
+	pinky:
+		idle:
+			Start: 0
+			Length: 4
+			Facings: 32
+			Tick: 180
+			Offset: 1,6
+		run:
+			Start: 128
+			Length: 15
+			Tick: 100
+			Facings: 16
+			Offset: 1,6
+		shoot:
+			Start: 368
+			Length: 10
+			Facings: 16
+			Tick: 100
+			Offset: 1,6
+		die:
+			Start: 528
+			Length: 46
+			Facings: 1
+			Tick: 100
+			Offset: 1,6
+		icon: zombicon
+			Start: 0
+		muzzle: piffpiff
+			Start: 0
+			Length: 1
+	bspi:
+		idle: bspi_idle
+			Start: 0
+			Length: 1
+			Facings: 32
+			Offset: 0,-4
+			ZOffset: 150
+		shoot: bspi_idle
+			Start: 0
+			Length: 1
+			Facings: 32
+			Offset: 0,-4
+			ZOffset: 150
+		run: bspi_walk
+			Start: 0
+			Length: 12
+			Tick: 50
+			Facings: 32
+			Offset: 0,-4
+			ZOffset: 150
+		die: bspi_death
+			Start: 80
+			Length: 40
+			Facings: 1
+			Tick: 50
+			Offset: 0,-4
+			ZOffset: 150
+		muzzle: minigun
+			Start: 0
+			Length: 6
+			Facings: 8
+		icon: zombicon
+			Start: 0
+	reve:
+		idle: skel_idle
+			Start: 0
+			Length: 1
+			Facings: 32
+			Offset: 0,-10
+			ZOffset: 150
+		run: skel_walk
+			Start: 0
+			Length: 12
+			Tick: 75
+			Facings: 32
+			Offset: 0,-10
+			ZOffset: 150
+		shoot: skel_fire
+			Start: 0
+			Length: 24
+			Facings: 16
+			Tick: 50
+			Offset: 0,-10
+			ZOffset: 150
+		die: skel_die
+			Start: 0
+			Length: 41
+			Tick: 50
+			Facings: 1
+			Offset: 0,-10
+			ZOffset: 150
+		icon: zombicon
+			Start: 0
+	manc:
+		idle: fat_idle
+			Start: 0
+			Length: 1
+			Facings: 32
+			Offset: 0,-15
+		run: fat_walk
+			Start: 0
+			Length: 20
+			Facings: 16
+			Offset: 0,-15
+			Tick: 75
+		shoot: fat_att
+			Start: 0
+			Length: 10
+			Facings: 16
+			Offset: 0,-15
+			Tick: 65
+		die: fat_gored
+			Start: 0
+			Length: *
+			Facings: 1
+			Offset: 0,-15
+			Tick: 60
+		icon: zombicon
+			Start: 0
+	alienmothership:
+		idle:
+			Start: 0
+		open:
+			Start: 0
+		unload:
+			Start: 0
+		icon: alienmothershipicon
+			Start: 0
+		bib:
+			Length: *
+			UseTilesetExtension: false
+	mechwarrior.england:
+		idle:
+			Facings: 8
+		stand: piff
+			Start: 0
+			Length: 1
+		run:
+			Start: 8
+			Length: 8
+			Facings: 8
+			Tick: 87
+		shoot:
+			Start: 72
+			Length: 4
+			Facings: 8
+		muzzle: gunfire2
+			Length: 5
+		die:
+			Start: 104
+			Length: 8
+		die-crushed:
+			Start: 104
+			Length: 8
+		icon: zombicon
+	exciter:
+		idle:
+			Start: 0
+			Facings: 8
+		idle1:
+			Start: 0
+			Facings: 8
+		idle2:
+			Start: 0
+			Facings: 8
+		stand:
+			Start: 0
+			Facings: 8
+		stand2:
+			Start: 0
+			Facings: 8
+		run:
+			Start: 8
+			Length: 8
+			Facings: 8
+			Tick: 130
+		shoot:
+			Start: 72
+			Length: 4
+			Facings: 8
+			Tick: 507
+		die:
+			Start: 104
+			Length: 8
+			BlendMode: Additive
+			Tick: 100
+		die-crushed:
+			Start: 104
+			Length: 8
+			BlendMode: Alpha
+		turret:
+			Start: 112
+			Facings: -32
+		muzzle: minigun
+			Start: 0
+			Length: 6
+			Facings: 8
+		icon: zombicon
+			Start: 0
+	tripod:
+		idle:
+			Start: 0
+			Facings: 8
+			Offset: -10,20
+		stand:
+			Start: 0
+			Facings: 8
+			Offset: -10,20
+		stand2:
+			Start: 240
+			Length: 50
+			Tick: 150
+			Offset: -10,20
+		run:
+			Start: 8
+			Length: 24
+			Facings: 8
+			Tick: 230
+			Offset: -10,20
+		turret: 3tnk
+			Start: 32
+			Facings: 32
+			UseClassicFacingFudge: True
+			ZOffset: -512
+		shoot:
+			Start: 200
+			Length: 5
+			Facings: 8
+			Offset: -10,20
+		muzzle: piff
+			Start: 0
+			Length: 1
+		missilemuzzle: samfire
+			Length: 18
+			Facings: 8
+			Offset: -2,-2
+		die:
+			Start: 240
+			Length: 50
+			Tick: 100
+			Offset: -10,20
+			ZOffset: -511
+		die-crushed:
+			Start: 240
+			Length: 50
+			Tick: 150
+			Offset: -10,20
+		icon: zombicon
+	crashsitefire:
+		idle: fire1
+			Length: *
+			Offset: 0,-3
+			ZOffset: 1023
+	crashsitefire2:
+		idle: fire2
+			Length: *
+			Offset: 0,-3
+			ZOffset: 1023
+	crashsitefire3:
+		idle: fire3
+			Length: *
+			Offset: 0,-3
+			ZOffset: 1023
+	crashsitefire4:
+		idle: fire4
+			Length: *
+			Offset: 0,-3
+			ZOffset: 1023
+	beacon:
+		Defaults:
+			ZOffset: 2535
+		arrow: mouse
+			Start: 5
+			Offset: 1,-12
+		circles: fpls
+			Length: *
+			ZOffset: 2047
+		atomicon: lores|atomicon
+			Length: *
+			Offset: 0,-42
+		pbmbicon: lores|pbmbicon
+			Length: *
+			Offset: 0,-42
+		camicon: lores|camicon
+			Length: *
+			Offset: 0,-42
+		pinficon: lores|pinficon
+			Length: *
+			Offset: 0,-42
+		clock: beaconclock
+			Length: *
+			Offset: 0,-42
+	fireball:
+		idle:
+			Start: 0
+			Length: *
+			Tick: 10
+	plasma:
+		idle: plas_ani
+			Start: 0
+			Length: *
+			Tick: 10
+	weaponscrate:
+		idle: allcrates
+			Start: 40
+			Length: 20
+			Tick: 50
+			Offset: 0,-8
+		land: allcrates
+			Start: 40
+			Length: 20
+			Tick: 50
+			Offset: 0,-8
+		water:
+			Start: 2
+			Length: 4
+			Tick: 500
+	explosion:
+		empexplosion: fpower
+			ZOffset: 2047
+			Length: *
+		smallfire: fire1
+			Tick: 100
+			Length: *
+			Offset: 0,-3
+			ZOffset: 1023
+		dogbite: zombie
+			Start: 106
+			Length: 7
+			Tick: 10
+		plasma_puff: plas_puf
+			Start: 0
+			Length: *
+			Tick: 100
+		plasmaburst_puff: spls_puf
+			Start: 0
+			Length: *
+			Tick: 60
+			BlendMode: Additive
+		teleport: tele
+			Start: 0
+			Length: *
+			Tick: 180
+			ZOffset: -511
+			BlendMode: Additive
+
+Weapons:
+	Munch:
+		Report: Munchymunchy.aud
+		ReloadDelay: 20
+		Range: 1c512
+		Projectile: Bullet
+			Speed: 1c682
+		Warhead@1Dam: SpreadDamage
+			Damage: 3000
+			Versus:
+				Wood: 10
+				Light: 30
+				Heavy: 10
+				Concrete: 10
+			DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
+	Punch:
+		Inherits: ^Cannon
+		Report: Munchymunchy.aud
+		ReloadDelay: 20
+		Range: 1c512
+		Projectile: Bullet
+			Speed: 1c682
+		Warhead@1Dam: SpreadDamage
+			Damage: 3500
+			Versus:
+				None: 30
+				Wood: 75
+				Light: 75
+				Concrete: 50
+		Warhead@2Eff: CreateEffect
+			Explosions: piffs
+			DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
+	CannonBall:
+		Inherits: ^Cannon
+		ReloadDelay: 60
+		Burst: 3
+		Range: 4c0
+		Report: turret1.aud
+		Projectile: Bullet
+			Speed: 200
+			Inaccuracy: 0c512
+			Image: fb3
+			TrailImage: fb4
+		Warhead@1Dam: SpreadDamage
+			Spread: 56
+			Damage: 5000
+			Versus:
+				None: 100
+				Wood: 40
+				Light: 30
+				Heavy: 10
+				Concrete: 10
+		Warhead@2Smu: LeaveSmudge
+			SmudgeType: Crater
+			InvalidTargets: Vehicle, Tank, Structure, Wall, Husk, Trees
+		Warhead@3Eff: CreateEffect
+			Explosions: smallfire
+	Fireball:
+		ReloadDelay: 75
+		Range: 7c0
+		Report: dsfirsht.aud
+		Projectile: Bullet
+			Speed: 250
+			Image: fireball
+			Blockable: false
+			Inaccuracy: 0c512
+		Warhead@1Dam_impact: SpreadDamage
+			Spread: 308
+			Damage: 8000
+			ValidTargets: Ground, Water, Trees
+			Versus:
+				None: 30
+				Wood: 40
+				Light: 80
+				Heavy: 45
+				Concrete: 30
+		Warhead@3Smu_impact: LeaveSmudge
+			SmudgeType: Scorch
+		Warhead@4Eff_impact: CreateEffect
+			Explosions: small_napalm
+			ImpactSounds: dsfirxpl.aud
+	FireballAA:
+		Inherits: ^AntiAirMissile
+		ReloadDelay: 75
+		Range: 7c0
+		MinRange: 0c512
+		Report: turret1.aud
+		Projectile: Missile
+			Arm: 3
+			Speed: 270
+			ContrailLength: 0
+			TrailImage: fb2
+			Image: fireball
+			Inaccuracy: 0c128
+			RangeLimit: 10c0
+			HorizontalRateOfTurn: 10
+		Warhead@1Dam_impact: SpreadDamage
+			Spread: 128
+			Damage: 3000
+			ValidTargets: Air
+			Versus:
+				None: 10
+				Wood: 75
+				Light: 35
+				Heavy: 100
+				Concrete: 50
+		Warhead@4Eff_impact: CreateEffect
+			Explosions: small_napalm
+			ImpactSounds: dsfirxpl.aud
+	PlasmaPuff:
+		ReloadDelay: 85
+		Range: 5c0
+		Burst: 4
+		BurstDelays: 3
+		Report: dsplasma.aud
+		Projectile: Bullet
+			Speed: 204
+			Inaccuracy: 0c256
+			Image: plasma
+			Shadow: True
+		Warhead@1Dam_impact: SpreadDamage
+			Spread: 716
+			Damage: 5000
+			ValidTargets: Ground, Water, Trees
+			Versus:
+				None: 20
+				Wood: 75
+				Light: 75
+				Heavy: 40
+				Concrete: 50
+		Warhead@3Smu_impact: LeaveSmudge
+			SmudgeType: Scorch
+		Warhead@4Eff_impact: CreateEffect
+			Explosions: small_napalm
+			ImpactSounds: firebl3.aud
+	FireBurst:
+		ReloadDelay: 120
+		Range: 7c0
+		Report: DemonShoot.aud
+		Projectile: Bullet
+			Trail: FB1
+			Blockable: false
+			LaunchAngle: 50
+			Inaccuracy: 0c128
+			Image: fireball
+			TrailImage: fb4
+			Speed: 200
+			CloseEnough: 50
+			ContrailLength: 5
+		Warhead@1Dam_impact: SpreadDamage
+			Spread: 512
+			Damage: 32000
+			ValidTargets: Ground, Water, Trees
+			Versus:
+				None: 90
+				Wood: 75
+				Light: 60
+				Heavy: 55
+				Concrete: 50
+			DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		Warhead@2Smu: LeaveSmudge
+			SmudgeType: Crater
+			Size: 3
+		Warhead@3Eff: CreateEffect
+			Explosions: plasma_puff
+			ImpactSounds: FireBurstImpact.aud
+			InvalidImpactTypes: Water, Air, AirHit
+	PlasmaBurst:
+		ReloadDelay: 100
+		Range: 7c0
+		Report: dsfirsht.aud
+		Projectile: Bullet
+			Speed: 100
+			Blockable: false
+			Image: plasma
+			Inaccuracy: 0c128
+			ContrailLength: 10
+		Warhead@1Dam_impact: SpreadDamage
+			Spread: 500
+			Damage: 32000
+			ValidTargets: Ground, Water, Trees
+			Versus:
+				None: 90
+				Wood: 75
+				Light: 60
+				Heavy: 25
+				Concrete: 50
+			DamageTypes: Prone50Percent, TriggerProne, ElectricityDeath
+		Warhead@3Smu_impact: LeaveSmudge
+			SmudgeType: Scorch
+			Size: 2
+		Warhead@4Eff_impact: CreateEffect
+			Explosions: smallfire
+			ImpactSounds: firebl3.aud
+		Warhead@8Eff_areanuke1: CreateEffect
+			Explosions: smallfire
+			ImpactSounds:
+			Delay: 5
+		Warhead@8Eff_areanuke1: CreateEffect
+			Explosions: smallfire
+			ImpactSounds:
+			Delay: 10
+		Warhead@8Eff_areanuke1: CreateEffect
+			Explosions: smallfire
+			ImpactSounds:
+			Delay: 15
+		Warhead@4Eff_impact: CreateEffect
+			Explosions: plasmaburst_puff
+			ImpactSounds: dsfirxpl.aud
+	Flamethrower:
+		Inherits: ^Cannon
+		ReloadDelay: 0
+		Range: 8c0
+		Burst: 15
+		BurstDelays: 1
+		Projectile: Bullet
+			Speed: 180
+			TrailImage: fb4
+			Image: fb3
+			LaunchAngle: 45
+			Inaccuracy: 1c938
+			ValidTargets: Ground, Water, Trees
+		Warhead@1Dam_impact: SpreadDamage
+			Spread: 200
+			Damage: 100
+			ValidTargets: Ground
+			Versus:
+				None: 90
+				Wood: 10
+				Light: 30
+				Heavy: 20
+				Concrete: 10
+			DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
+		Warhead@3Smu_impact: LeaveSmudge
+			SmudgeType: Scorch
+			Size: 1
+		Warhead@4Eff_impact: CreateEffect
+			Explosions: smallfire
+			ImpactSounds: firebl3.aud
+		Warhead@8Eff_areanuke1: CreateEffect
+			Explosions: smallfire
+			ImpactSounds:
+			Delay: 5
+		Warhead@8Eff_areanuke1: CreateEffect
+			Explosions: smallfire
+			ImpactSounds:
+			Delay: 10
+		Warhead@8Eff_areanuke1: CreateEffect
+			Explosions: smallfire
+			ImpactSounds:
+			Delay: 15
+		Warhead@3Eff: CreateEffect
+			Explosions: small_napalm
+	MiniGun:
+		ReloadDelay: 5
+		Range: 7c0
+		Report: RedeemerGun.aud
+		Projectile: Bullet
+			Speed: 682
+			Image: 120MM
+			Shadow: True
+			Inaccuracy: 0c614
+			TrailImage: smokey
+		Warhead@1Dam: SpreadDamage
+			Spread: 128
+			Damage: 2000
+			Versus:
+				None: 200
+				Wood: 50
+				Light: 60
+				Heavy: 25
+				Concrete: 25
+			DamageTypes: Prone50Percent, TriggerProne, ElectricityDeath
+		Warhead@2Smu: LeaveSmudge
+			SmudgeType: Crater
+			InvalidImpactTypes: Water
+		Warhead@3Eff: CreateEffect
+			Explosions: small_explosion_air
+	ShockShell:
+		Inherits: ^Artillery
+		ReloadDelay: 120
+		Range: 13c0
+		Burst: 1
+		BurstDelays: 10
+		Report: AA.aud
+		ValidTargets: Ground, Water
+		Projectile: Bullet
+			Blockable: false
+			LaunchAngle: 50
+			Inaccuracy: 0c128
+			Image: plasma
+			Speed: 230
+			CloseEnough: 0c512
+			ContrailLength: 40
+		Warhead@1Dam: SpreadDamage
+			Falloff: 100, 37, 14, 5, 0
+			Spread: 426
+			Damage: 22000
+			ValidTargets: Ground, Water
+			Versus:
+				None: 90
+				Wood: 75
+				Light: 60
+				Heavy: 25
+				Concrete: 50
+			DamageTypes: Prone50Percent, TriggerProne, ElectricityDeath
+		Warhead@2Smu: LeaveSmudge
+			SmudgeType: Crater
+			Size: 3
+		Warhead@3Eff: CreateEffect
+			Explosions: plasma_puff
+			ImpactSounds: kaboom22.aud
+			InvalidImpactTypes: Water, Air, AirHit
+		Warhead@4EffWater: CreateEffect
+			Explosions: med_splash
+			ImpactSounds: firebl3.aud
+			ValidImpactTypes: Water
+	EliminatorAA:
+		Inherits: ^AACannon
+		ReloadDelay: 100
+		Range: 12c0
+		Report: EliminatorGun.aud
+		ValidTargets: Air
+		Projectile: Bullet
+			Speed: 1150
+			Image: 120MM
+			RangeLimit: 15c0
+			Blockable: false
+			Inaccuracy: 0c128
+			ContrailLength: 30
+		Warhead@1Dam: SpreadDamage
+			Spread: 700
+			Damage: 10000
+			ValidTargets: Air
+			Versus:
+				None: 40
+				Wood: 10
+				Light: 60
+				Heavy: 10
+				Concrete: 20
+			DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
+		Warhead@2Eff: CreateEffect
+			Explosions: plasma_puff
+	Lazer:
+		ReloadDelay: 150
+		Range: 12c0
+		Report: raycharge.aud
+		Projectile: LaserZap
+			Speed: 1c282
+			BeamWidth: 4
+			BeamDuration: 100
+			Color: FFFFFF
+		Warhead@1Dam: SpreadDamage
+			Spread: 512
+			Damage: 32000
+			ValidTargets: Ground, Water, Trees
+			Versus:
+				None: 1000
+			DamageTypes: Prone50Percent, TriggerProne, ElectricityDeath
+		Warhead@2Smu: LeaveSmudge
+			SmudgeType: Crater
+		Warhead@3Eff: CreateEffect
+			Explosions: small_explosion
+			ImpactSounds: kaboom15.aud
+	Electricity:
+		ReloadDelay: 150
+		Range: 12c0
+		Projectile: TeslaZap
+		Warhead@1Dam: SpreadDamage
+			Spread: 42
+			Damage: 10000
+			Versus:
+				None: 1000
+			ValidTargets: Ground, Water, Trees
+			DamageTypes: Prone50Percent, TriggerProne, ElectricityDeath
+		Warhead@3Smu_impact: LeaveSmudge
+			SmudgeType: Scorch
+			Size: 2
+	TripodPlasmaPuff:
+		Inherits: ^AntiGroundMissile
+		ReloadDelay: 15
+		Range: 10c0
+		BurstDelays: 3
+		Report: dsplasma.aud
+		Projectile: Missile
+			Speed: 204
+			Inaccuracy: 0c256
+			Image: plasma
+			RangeLimit: 10c0
+			Shadow: True
+		Warhead@1Dam_impact: SpreadDamage
+			Spread: 213
+			Damage: 4000
+			ValidTargets: Ground, Water, Trees
+			Versus:
+				None: 20
+				Wood: 75
+				Light: 75
+				Concrete: 50
+			DamageTypes: Prone50Percent, TriggerProne, ElectricityDeath
+		Warhead@3Smu_impact: LeaveSmudge
+			SmudgeType: Scorch
+		Warhead@4Eff_impact: CreateEffect
+			Explosions: small_napalm
+			ImpactSounds: firebl3.aud
+	TripodPlasmaballAA:
+		Inherits: ^AntiAirMissile
+		ReloadDelay: 15
+		Range: 12c0
+		MinRange: 0c512
+		Report: dsfirsht.aud
+		Projectile: Missile
+			Arm: 3
+			Speed: 313
+			ContrailLength: 0
+			Image: plasma
+			Inaccuracy: 128
+			RangeLimit: 14c0
+			HorizontalRateOfTurn: 15
+		Warhead@1Dam_impact: SpreadDamage
+			Spread: 128
+			Damage: 5000
+			ValidTargets: Air
+			Versus:
+				None: 10
+				Wood: 75
+				Light: 35
+				Heavy: 100
+				Concrete: 50
+		Warhead@4Eff_impact: CreateEffect
+			Explosions: plasma_puff
+			ImpactSounds: dsfirxpl.aud
+	MothershipExplosion:
+		ValidTargets: Ground, Trees, Water, Underwater, Air
+		Warhead@1Dam_impact: SpreadDamage
+			Spread: 5c0
+			Damage: 6000
+			Falloff: 1000, 368, 135, 50, 18, 7, 0
+			ValidTargets: Ground, Trees, Water, Underwater, Air
+			Versus:
+				Concrete: 25
+			AffectsParent: false
+			DamageTypes: Prone50Percent, TriggerProne, ElectricityDeath, Incendiary
+		Warhead@3Eff_impact: CreateEffect
+			Explosions: plasmaburst_puff
+			ImpactSounds: kaboom1.aud
+		Warhead@11Dam_areanuke3: SpreadDamage
+			Spread: 30c0
+			Damage: 200000
+			InvalidTargets: Vehicle, Tank, Structure, Wall
+			ValidTargets: Trees
+			DamageTypes: Incendiary, Prone50Percent, TriggerProne
+		Warhead@11Dam_areanuke3: SpreadDamage
+			Spread: 30c0
+			Damage: 200000
+			Delay: 1
+			InvalidTargets: Vehicle, Tank, Structure, Wall
+			ValidTargets: Trees
+			DamageTypes: Incendiary, Prone50Percent, TriggerProne
+		Warhead@12Res_areanuke3: DestroyResource
+			Size: 4
+			Delay: 15
+		Warhead@13Smu_areanuke3: LeaveSmudge
+			SmudgeType: Scorch
+			InvalidTargets: Vehicle, Tank, Structure, Wall, Trees
+			Size: 20
+			Delay: 15
+		Warhead@14Smu_areanuke3: LeaveSmudge
+			SmudgeType: Crater
+			InvalidTargets: Vehicle, Tank, Structure, Wall, Trees
+			Size: 20
+			Delay: 15
+	TripodExplosion:
+		Warhead@1Dam: SpreadDamage
+			Spread: 2c0
+			Damage: 200000
+			Falloff: 1000, 368, 135, 50, 18, 7, 0
+			Versus:
+				None: 90
+				Wood: 75
+				Light: 60
+				Heavy: 25
+			DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		Warhead@2Smu: LeaveSmudge
+			SmudgeType: Scorch
+			Size: 5,4
+			Delay: 3
+		Warhead@3Eff: CreateEffect
+			Explosions: plasmaburst_puff
+			ImpactSounds: kaboom22.aud
+			Delay: 5
+		Warhead@4Dam: SpreadDamage
+			Spread: 3c0
+			Damage: 10000
+			Falloff: 1000, 368, 135, 50, 18, 7, 0
+			ValidTargets: Ground, Water, Trees
+			Delay: 6
+			Versus:
+				None: 90
+				Wood: 75
+				Light: 60
+				Heavy: 25
+			DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		Warhead@5Dam: SpreadDamage
+			Spread: 5c0
+			Damage: 10000
+			Falloff: 1000, 368, 135, 50, 18, 7, 0
+			Delay: 7
+			Versus:
+				None: 90
+				Wood: 75
+				Light: 60
+				Heavy: 25
+			DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+
+Voices:
+	MutatedVoices:
+		Voices:
+			Select: antbite
+			Move: antbite
+			Action: antbite
+			Kill: RevenantKill1,RevenantKill2,RevenantKill3
+			Die: squishy2,RevenantDie1,RevenantDie2,RevenantDie3
+			Burned: squishy2,RevenantDie1,RevenantDie2,RevenantDie3
+			Zapped: squishy2,RevenantDie1,RevenantDie2,RevenantDie3
+	ArachnotronVoices:
+		Voices:
+			Select: antbite
+			Move: antbite
+			Action: antbite
+			Kill: ArachnotronKill1,ArachnotronKill2,ArachnotronKill3
+			Die: ArachnotronDie1,ArachnotronDie2
+			Burned: ArachnotronDie3
+			Zapped: ArachnotronDie3
+	RevenantVoices:
+		Voices:
+			Select: antbite
+			Move: antbite
+			Action: antbite
+			Kill: RevenantKill1,RevenantKill2,RevenantKill3
+			Die: MutantKill1,MutantKill2,MutantKill3
+			Burned: RevenantDie3
+			Zapped: RevenantDie3
+	ImpVoices:
+		Voices:
+			Select: antbite
+			Move: antbite
+			Action: antbite
+			Kill: IKill2,ISelect2,ImpKill1
+			Die: ImpHowl,ImpDie1
+			Burned: ImpHowl
+			Zapped: ImpHowl
+	PinkVoices:
+		Voices:
+			Select: antbite
+			Move: antbite
+			Action: antbite
+			Kill: DemonKill1,DemonKill2,DemonKill3
+			Die: DemonDie1,DemonDie2
+			Burned: DemonDie3
+			Zapped: DemonDie3
+	MancubusVoices:
+		Voices:
+			Select: antbite
+			Move: antbite
+			Action:
+			Kill: MancubusKill1,MancubusKill2,MancubusKill3
+			Die: MancubusDie1,MancubusDie2,MancubusDie3
+			Burned: MancubusDie3
+			Zapped: MancubusDie3
+	ExoMechVoices:
+		Voices:
+			Select: antbite
+			Move: antbite
+			Action:
+			Kill: Move2,Move1,Action1
+			Die: EliminatorDie1,EliminatorDie2,EliminatorDie3
+			Burned: EliminatorDie1,EliminatorDie2,EliminatorDie3
+			Zapped: EliminatorDie1,EliminatorDie2,EliminatorDie3
+	EliminatorVoices:
+		Voices:
+			Select: antbite
+			Move: antbite
+			Action:
+			Kill: EliminatorKill1,EliminatorKill2,EliminatorKill3
+			Die: TripodDie4,TripDieTest,TripDie2Test
+			Burned: Move2,Move1
+			Zapped: Move2,Move1
+	TripodVoices:
+		Voices:
+			Select: antbite
+			Move:
+			Action: ExciterDie1,ExciterDie2,ExciterDie3
+			Kill: Action2,Move2,Kill1
+			Die: TripodDie1,TripodDie2,TripodDie3
+			Burned: Move1
+			Zapped: Move1
+	AntVoice:
+		Voices:
+			Select: antbite
+			Action: antbite
+			Kill: antbite
+			Die: antdie
+			Burned: antdie
+			Zapped: antdie
+
+Music:
+	rain: rain
+	lose: lose
+
+Notifications:
+	Speech:
+		Notifications:
+			AbombAvailable: aavail1
+			AbombLaunchDetected: abomblaunch
+			AbombPrepping: abombprepping
+			AbombReady: abombready
+			AirUnitLost: unitlost
+			AlliedForcesApproaching: aappro1
+			AlliedForcesFallen: afallen1
+			AlliedForcesSelected: aselect1
+			AlliedReinforcementsArrived: aarrive1
+			AlliedReinforcementsEast: aarive1
+			AlliedReinforcementsNorth: aarrivn1
+			AlliedReinforcementsSouth: aarrivs1
+			AlliedReinforcementsWest: aarrivw1
+			AtomBombLaunchDetected: atlnch1
+			AtomBombPrepping: atprep1
+			BaseAttack: ourbaseisunderattack
+			Building: building
+			BuildingCannotPlaceAudio: cannotdeployhere
+			BuildingCaptured: buildingcaptured
+			BuildingInfiltrated: buildinginfiltrated
+			BuildingInProgress: buildinginprogress
+			BuildingProgress: buildinginprogress
+			Cancelled: cancelled
+			ChronosphereCharging: chronospherecharging
+			ChronosphereReady: chronosphereready
+			ChronosphereTestSuccessful: chroyes1
+			CommandCenterAttack: cmdcntr1
+			CommandoFreed: comndof1
+			CommandoRescued: comndor1
+			ConstructionComplete: contructioncomplete
+			ControlCenterDeactivated: cntlded1
+			ConvoyApproaching: convyap1
+			ConvoyUnitLost: convlst1
+			CreditsStolen: creditsstolen
+			EnemyUnitsApproaching: enmyapp1
+			EnemyDetected: enmydet
+			ExplosiveChargePlaced: xploplc1
+			FirstObjectiveMet: 1objmet1
+			FourtyMinutesRemaining: 40minr
+			HarvesterAttack:
+			InsufficientFunds: insufficientfunds
+			InsufficientPower: nopowr1
+			IronCurtainCharging: ironcurtaincharging
+			IronCurtainReady: ironcurtainready
+			KosyginFreed: kosyfre1
+			KosyginRescued: kosyres1
+			Leave: battlecontrolterminated
+			Lose: missionfail
+			LowPower: lowpower
+			MercenaryFreed: mercf1
+			MercenaryRescued: mercr1
+			MissionAccomplished: missionaccomplished
+			MissionFailed: missionfailed
+			MissionLoaded: load1
+			MissionSaved: save1
+			MissionTimerInitialised: mtimein1
+			NavalUnitLost: navylst1
+			NewOptions: newconstructionoptions
+			NoBuild: buildinginprogress
+			ObjectiveMet: objmet1
+			ObjectiveNotMet: objnmet1
+			ObjectiveNotReached: objnrch1
+			ObjectiveReached: objrch1
+			OnHold: onhold
+			OperationControlTerminated: opterm1
+			PrimaryBuildingSelected: primrybldngselectd
+			ReinforcementsArrived: ReinforcementsArrived
+			Repairing: repairing
+			SatelliteLaunched: satlaunched
+			SecondObjectiveMet: 2objmet1
+			SelectTarget: selecttarget
+			SignalFlare: flare1
+			SignalFlareEast: flaree1
+			SignalFlareNorth: flaren1
+			SignalFlareSouth: flares1
+			SignalFlareWest: flarew1
+			SilosNeeded: silosneeded
+			SonarPulseReady: pulse1
+			SovietEmpireFallen: sovefal1
+			SovietEmpireSelected: sovemp1
+			SovietForcesApproaching: sovfapp1
+			SovietForcesFallen: sovforc1
+			SovietReinforcementsArrived: sovrein1
+			SpyPlaneReady: spyplaneready
+			StartGame: battlecontrolinitialized
+			StructureDestroyed: strckil1
+			StructureSold: structuresold
+			TanyaFreed: tanyaf1
+			TanyaRescued: tanyar1
+			TargetFreed: targfre1
+			TargetRescued: targres1
+			TenMinutesRemaining: 10minr
+			ThirdObjectiveMet: 3objmet1
+			ThirtyMinutesRemaining: 30minr
+			TimerStarted: timergo1
+			TimerStopped: timerno1
+			Training: training
+			TwentyMinutesRemaining: 20minr
+			UnitArmorUpgraded: armorup1
+			UnitFirepowerUpgraded: firepo1
+			UnitFull: unitful1
+			UnitLost: unitlost
+			UnitReady: unitready
+			UnitRepaired: unitrepaired
+			UnitSold: unitsld1
+			UnitSpeedUpgraded: unitspd1
+			UnitStolen: unitstolen
+			WarningOneMinuteRemaining: 1minr
+			WarningTwoMinutesRemaining: 2minr
+			WarningThreeMinutesRemaining: 3minr
+			WarningFourMinutesRemaining: 4minr
+			WarningFiveMinutesRemaining: 5minr
+			Win: missionaccomplished
+	Sounds:
+		Notifications:
+			RadarUp: radaron2
+			RadarDown: radardn1
+			CashTickUp: cashup1
+			CashTickDown: cashdn1
+			LevelUp: hydrod1
+			DisablePower: buildingoffline
+			EnablePower: buildingonline
+			ChatLine: rabeep1
+			ClickSound: ramenu1
+			ClickDisabledSound:
+			Beacon: beepslct
+			AlertBuzzer: buzzy1
+			AlertBleep: bleep6
+			BaseSetup: bleep9
