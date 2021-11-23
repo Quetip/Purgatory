@@ -90,6 +90,8 @@ PDOX:
 		Duration: 20
 		KillCargo: true
 		DisplayRadarPing: True
+		Dimensions: 3, 3
+		Footprint: _x_ xxx _x_
 	ChronoshiftPower@advancedchronoshift:
 		OrderName: AdvancedChronoshift
 		Prerequisites: pdox.germany
@@ -104,6 +106,8 @@ PDOX:
 		Duration: 20
 		KillCargo: true
 		DisplayRadarPing: True
+		Dimensions: 3, 3
+		Footprint: _x_ xxx _x_
 ATEK:
 	GpsPower:
 		Icon: gps
@@ -112,7 +116,7 @@ ATEK:
 		Description: GPS Satellite
 		LongDesc: Reveals map terrain and provides tactical\ninformation.
 		LaunchSound: satlaunched.aud
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 IRON:
 	Tooltip:
 		Name: Siege Barrier
@@ -128,6 +132,8 @@ IRON:
 		EndChargeSound: IronCurtainCharging
 		DisplayRadarPing: True
 		Condition: invulnerability
+		Dimensions: 3, 3
+		Footprint: _x_ xxx _x_
 MSLO:
 	NukePower:
 		Cursor: nuke
@@ -143,11 +149,10 @@ MSLO:
 		LaunchSpeechNotification: AbombLaunchDetected
 		MissileWeapon: atomic
 		SpawnOffset: 0,427,0
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayBeacon: True
 		DisplayRadarPing: True
 		BeaconPoster: atomicon
-		FlashType: Nuke
 FCOM:
 	Capturable:
 		Types: building
@@ -183,8 +188,8 @@ MONSTEREGG:
 		EmptyWeapon: UnitExplodePlane
 
 ^Monster:
-	Inherits@1: ^ExistsInWorld
-	Inherits@3: ^IronCurtainable
+	Inherits: ^ExistsInWorld
+	Inherits@3: ^SpriteActor
 	WithSpriteControlGroupDecoration:
 	RenderSprites:
 		Palette: effect
@@ -203,7 +208,7 @@ MONSTEREGG:
 		GenericName: Monster
 	Mobile:
 		Locomotor: wheeled
-		TurnSpeed: 8
+		TurnSpeed: 32
 		Speed: 50
 	Health:
 		HP: 30000
@@ -218,6 +223,7 @@ MONSTEREGG:
 	Selectable:
 		Bounds: 24,24,0,-4
 	AutoTarget:
+		InitialStanceAI: AttackAnything
 		InitialStance: AttackAnything
 		ScanRadius: 10
 	WithInfantryBody:
@@ -242,17 +248,17 @@ MONSTEREGG:
 		Voice: Action
 	WithMuzzleOverlay:
 	Targetable:
-		TargetTypes: Ground, Vehicle
+		TargetTypes: GroundActor, Infantry
 	WithDeathAnimation:
 		DeathPaletteIsPlayerPalette: False
 		DeathSequence: die
 		UseDeathTypeSuffix: false
 	ScriptTriggers:
 	AnnounceOnKill:
-	SelfHealing:
+	ChangesHealth:
 		PercentageStep: 1
 		Delay: 25
-		HealIfBelow: 1
+		StartIfBelow: 1
 		DamageCooldown: 375
 	DeathSounds:
 		Voice: Die
@@ -263,10 +269,10 @@ MONSTEREGG:
 		VoiceSet: AntVoice
 	WithDamageOverlay:
 	CombatDebugOverlay:
-	KillsSelf:
-		RequiresCondition: invulnerability
 	Chronoshiftable:
 		ExplodeInstead: True
+	OwnerLostAction:
+		Action: Kill
 
 SNIPER:
 	-Targetable:
@@ -303,7 +309,7 @@ WEAPONSCRATE:
 		Palette: spidercostume
 	Tooltip:
 		Name:
-	HealUnitsCrateAction:
+	HealActorsCrateAction:
 		Sound: NewTechnologyAcquired.aud
 		SelectionShares: 1
 		Sequence: fpower

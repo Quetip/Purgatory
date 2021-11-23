@@ -40,14 +40,14 @@ CannonBall:
 			Concrete: 10
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
-		InvalidTargets: Vehicle, Tank, Structure, Wall, Husk, Trees
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees
 	Warhead@3Eff: CreateEffect
 		Explosions: smallfire
 Fireball:
 	ReloadDelay: 75
 	Range: 7c0
 	Report: dsfirsht.aud
-	ValidTargets: Ground, Water, Trees
+	ValidTargets: GroundActor, WaterActor, Trees
 	Projectile: Bullet
 		Speed: 250
 		Image: fireball
@@ -59,7 +59,7 @@ Fireball:
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 308
 		Damage: 8000
-		ValidTargets: Ground, Water, Trees
+		ValidTargets: GroundActor, WaterActor, Trees
 		Versus:
 			None: 30
 			Wood: 40
@@ -80,7 +80,7 @@ FireballAA:
 	Range: 7c0
 	MinRange: 0c512
 	Report: turret1.aud
-	ValidTargets: Air
+	ValidTargets: AirborneActor
 	Projectile: Missile
 		Arm: 3
 		Speed: 270
@@ -91,11 +91,11 @@ FireballAA:
 		Palette: effecttd
 		Inaccuracy: 0c128
 		RangeLimit: 10c0
-		HorizontalRateOfTurn: 10
+		HorizontalRateOfTurn: 40
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 128
 		Damage: 3000
-		ValidTargets: Air
+		ValidTargets: AirborneActor
 		Versus:
 			None: 10
 			Wood: 75
@@ -112,7 +112,7 @@ PlasmaPuff:
 	Burst: 4
 	BurstDelays: 3
 	Report: dsplasma.aud
-	ValidTargets: Ground, Water
+	ValidTargets: GroundActor, WaterActor
 	Projectile: Bullet
 		Speed: 204
 		Inaccuracy: 0c256
@@ -122,7 +122,7 @@ PlasmaPuff:
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 716
 		Damage: 5000
-		ValidTargets: Ground, Water, Trees
+		ValidTargets: GroundActor, WaterActor, Trees
 		Versus:
 			None: 20
 			Wood: 75
@@ -139,7 +139,7 @@ FireBurst:
 	ReloadDelay: 120
 	Range: 7c0
 	Report: DemonShoot.aud
-	ValidTargets: Ground, Water
+	ValidTargets: GroundActor, WaterActor
 	Projectile: Bullet
 		Blockable: false
 		LaunchAngle: 50
@@ -153,7 +153,7 @@ FireBurst:
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 512
 		Damage: 20000
-		ValidTargets: Ground, Water, Trees
+		ValidTargets: GroundActor, WaterActor, Trees
 		Versus:
 			None: 90
 			Wood: 75
@@ -172,7 +172,7 @@ PlasmaBurst:
 	ReloadDelay: 100
 	Range: 7c0
 	Report: dsfirsht.aud
-	ValidTargets: Ground, Water
+	ValidTargets: GroundActor, WaterActor
 	Projectile: Bullet
 		Speed: 100
 		Blockable: false
@@ -183,7 +183,7 @@ PlasmaBurst:
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 500
 		Damage: 32000
-		ValidTargets: Ground, Water, Trees
+		ValidTargets: GroundActor, WaterActor, Trees
 		Versus:
 			None: 90
 			Wood: 75
@@ -228,7 +228,7 @@ Flamethrower:
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 200
 		Damage: 100
-		ValidTargets: Ground, Ground
+		ValidTargets: GroundActor
 		Versus:
 			None: 90
 			Wood: 10
@@ -263,7 +263,7 @@ MiniGun:
 	BurstDelays: 5
 	Range: 6c0
 	Report: RedeemerGun.aud
-	ValidTargets: Ground, Water
+	ValidTargets: GroundActor, WaterActor
 	Projectile: Bullet
 		Speed: 682
 		Image: 120MM
@@ -274,7 +274,7 @@ MiniGun:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 2000
-		ValidTargets: Ground, Water
+		ValidTargets: GroundActor, WaterActor
 		Versus:
 			None: 200
 			Wood: 50
@@ -291,7 +291,7 @@ ShockShell:
 	Burst: 1
 	BurstDelays: 10
 	Report: AA.aud
-	ValidTargets: Ground, Water
+	ValidTargets: GroundActor, WaterActor
 	Projectile: Bullet
 		Blockable: false
 		LaunchAngle: 50
@@ -304,7 +304,7 @@ ShockShell:
 		Falloff: 100, 37, 14, 5, 0
 		Spread: 426
 		Damage: 22000
-		ValidTargets: Ground, Water
+		ValidTargets: GroundActor, WaterActor
 		Versus:
 			None: 90
 			Wood: 75
@@ -322,13 +322,13 @@ ShockShell:
 	Warhead@4EffWater: CreateEffect
 		Explosions: med_splash
 		ImpactSounds: firebl3.aud
-		ValidTargets: Water
+		ValidTargets: WaterActor
 EliminatorAA:
 	Inherits: ^AACannon
 	ReloadDelay: 100
 	Range: 12c0
 	Report: EliminatorGun.aud
-	ValidTargets: Air
+	ValidTargets: AirborneActor
 	Projectile: Bullet
 		Speed: 1150
 		Image: 120MM
@@ -338,7 +338,7 @@ EliminatorAA:
 	Warhead@1Dam: SpreadDamage
 		Spread: 700
 		Damage: 10000
-		ValidTargets: Air
+		ValidTargets: AirborneActor
 		Versus:
 			None: 40
 			Wood: 10
@@ -354,7 +354,7 @@ Lazer:
 	ReloadDelay: 150
 	Range: 12c0
 	Report: raycharge.aud
-	ValidTargets: Ground, Water
+	ValidTargets: GroundActor, WaterActor
 	Projectile: LaserZap
 		Width: 4
 		Duration: 100
@@ -362,7 +362,7 @@ Lazer:
 	Warhead@1Dam: SpreadDamage
 		Spread: 512
 		Damage: 32000
-		ValidTargets: Ground, Water, Trees
+		ValidTargets: GroundActor, WaterActor, Trees
 		Versus:
 			None: 1000
 		DamageTypes: Prone50Percent, TriggerProne, ElectricityDeath
@@ -375,13 +375,13 @@ Electricity:
 	ReloadDelay: 150
 	Range: 12c0
 	Projectile: TeslaZap
-	ValidTargets: Ground, Water
+	ValidTargets: GroundActor, WaterActor
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 10000
 		Versus:
 			None: 1000
-		ValidTargets: Ground, Water, Trees
+		ValidTargets: GroundActor, WaterActor, Trees
 		DamageTypes: Prone50Percent, TriggerProne, ElectricityDeath
 	Warhead@3Smu_impact: LeaveSmudge
 		SmudgeType: Scorch
@@ -402,7 +402,7 @@ TripodPlasmaPuff:
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 213
 		Damage: 4000
-		ValidTargets: Ground, Water, Trees
+		ValidTargets: GroundActor, WaterActor, Trees
 		Versus:
 			None: 20
 			Wood: 75
@@ -428,11 +428,11 @@ TripodPlasmaballAA:
 		Palette: effecttd
 		Inaccuracy: 128
 		RangeLimit: 14c0
-		HorizontalRateOfTurn: 15
+		HorizontalRateOfTurn: 60
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 128
 		Damage: 5000
-		ValidTargets: Air
+		ValidTargets: AirborneActor
 		Versus:
 			None: 10
 			Wood: 75
@@ -445,12 +445,12 @@ TripodPlasmaballAA:
 		ImpactSounds: dsfirxpl.aud
 		ImpactActors: false
 MothershipExplosion:
-	ValidTargets: Ground, Ground, Trees, Water, Underwater, Air
+	ValidTargets: GroundActor, WaterActor, AirborneActor, UnderWater, Trees
 	Warhead@1Dam_impact: SpreadDamage
 		Spread: 5c0
 		Damage: 6000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		ValidTargets: Ground, Trees, Water, Underwater, Air
+		ValidTargets: GroundActor, WaterActor, AirborneActor, UnderWater, Trees
 		Versus:
 			Concrete: 25
 		AffectsParent: false
@@ -462,14 +462,14 @@ MothershipExplosion:
 	Warhead@11Dam_areanuke3: SpreadDamage
 		Spread: 30c0
 		Damage: 200000
-		InvalidTargets: Vehicle, Tank, Structure, Wall
+		InvalidTargets: Vehicle, Structure, Wall
 		ValidTargets: Trees
 		DamageTypes: Incendiary, Prone50Percent, TriggerProne
 	Warhead@11Dam_areanuke3: SpreadDamage
 		Spread: 30c0
 		Damage: 200000
 		Delay: 1
-		InvalidTargets: Vehicle, Tank, Structure, Wall
+		InvalidTargets: Vehicle, Structure, Wall
 		ValidTargets: Trees
 		DamageTypes: Incendiary, Prone50Percent, TriggerProne
 	Warhead@12Res_areanuke3: DestroyResource
@@ -477,12 +477,12 @@ MothershipExplosion:
 		Delay: 15
 	Warhead@13Smu_areanuke3: LeaveSmudge
 		SmudgeType: Scorch
-		InvalidTargets: Vehicle, Tank, Structure, Wall, Trees
+		InvalidTargets: Vehicle, Structure, Wall, Trees
 		Size: 20
 		Delay: 15
 	Warhead@14Smu_areanuke3: LeaveSmudge
 		SmudgeType: Crater
-		InvalidTargets: Vehicle, Tank, Structure, Wall, Trees
+		InvalidTargets: Vehicle, Structure, Wall, Trees
 		Size: 20
 		Delay: 15
 TripodExplosion:
@@ -509,7 +509,7 @@ TripodExplosion:
 		Spread: 3c0
 		Damage: 10000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		ValidTargets: Ground, Water, Trees
+		ValidTargets: GroundActor, WaterActor, Trees
 		Delay: 6
 		Versus:
 			None: 90

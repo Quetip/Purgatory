@@ -1,6 +1,5 @@
 PVICE:
 	Inherits: ^Monster
-	Inherits@3: ^SpriteActor
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -29,11 +28,6 @@ PVICE:
 	Armament@PRIMARY:
 		Weapon: Munch
 	-Explodes:
-	AutoTarget:
-		InitialStance: AttackAnything
-		ScanRadius: 5
-	Targetable:
-		TargetTypes: Ground, Infantry
 	RenderSprites:
 		Image: pvice
 		Palette: spidercostume
@@ -63,7 +57,6 @@ PVICE:
 	EdibleByLeap:
 BSPI:
 	Inherits: ^Monster
-	Inherits@3: ^SpriteActor
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -95,8 +88,6 @@ BSPI:
 		LocalOffset: 300, 0, 150
 		FireDelay: 1
 	-Explodes:
-	AutoTarget:
-	Targetable:
 	RenderSprites:
 		Image: bspi
 		Palette: spidercostume
@@ -126,7 +117,6 @@ BSPI:
 	EdibleByLeap:
 REVE:
 	Inherits: ^Monster
-	Inherits@3: ^SpriteActor
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -192,7 +182,6 @@ REVE:
 	DetectCloaked:
 IMP:
 	Inherits: ^Monster
-	Inherits@3: ^SpriteActor
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -239,7 +228,6 @@ IMP:
 	DetectCloaked:
 PINKY:
 	Inherits: ^Monster
-	Inherits@3: ^SpriteActor
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -263,7 +251,6 @@ PINKY:
 	Selectable:
 		Voice: Select
 		Bounds: 27,31,0,5
-	AutoTarget:
 	Armament@PRIMARY:
 		LocalOffset: 600,0,0
 		Weapon: FireBurst
@@ -289,7 +276,6 @@ PINKY:
 	DetectCloaked:
 MANC:
 	Inherits: ^Monster
-	Inherits@3: ^SpriteActor
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -309,13 +295,12 @@ MANC:
 		Voice: Select
 		Bounds: 38,38,0,-7
 	Mobile:
-		TurnSpeed: 3
+		TurnSpeed: 12
 		Voice: Move
 		Speed: 30
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 10c0
-	AutoTarget:
 	RenderSprites:
 		Image: manc
 		Palette: spidercostume
@@ -350,7 +335,6 @@ MANC:
 
 MECHWARRIOR:
 	Inherits: ^Monster
-	Inherits@3: ^SpriteActor
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -399,11 +383,11 @@ MECHWARRIOR:
 		Weapon: ArtilleryExplode
 		EmptyWeapon: UnitExplodeSmall
 		LoadedChance: 75
+	Targetable:
+		TargetTypes: GroundActor, Vehicle
 
 EXCITER:
 	Inherits: ^Monster
-	Inherits@3: ^SpriteActor
-	Inherits@2: ^ExistsInWorld
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -426,7 +410,7 @@ EXCITER:
 	RevealsShroud:
 		Range: 15c0
 	Turreted:
-		TurnSpeed: 3
+		TurnSpeed: 12
 		Offset: 0,0,0
 	Armament@PRIMARY:
 		Name: primary
@@ -472,10 +456,11 @@ EXCITER:
 	Selectable:
 		Bounds: 53,38,0,-4
 		Voice: Select
+	Targetable:
+		TargetTypes: GroundActor, Vehicle
 
 TRIPOD:
 	Inherits: ^Monster
-	Inherits@3: ^SpriteActor
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -503,7 +488,6 @@ TRIPOD:
 		Range: 20c0
 	RenderSprites:
 		Image: tripod
-	AutoTarget:
 	Armament@PRIMARY:
 		Weapon: Lazer
 		LocalOffset: 100,650,0
