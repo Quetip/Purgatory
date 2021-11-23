@@ -1,0 +1,329 @@
+World:
+	MissionData:
+		Briefing: Mission:\n\nDestroy the evil eggs!
+	LuaScript:
+		Scripts: Purgatory.lua
+	CrateSpawner:
+		CheckboxEnabled: False
+		CheckboxLocked: True
+		Minimum: 0
+	ScriptLobbyDropdown@difficulty:
+		ID: difficulty
+		Label: Difficulty
+		Values:
+			easy: Easy
+			normal: Medium
+			hard: Hard
+		Default: normal
+	MapOptions:
+		TechLevelDropdownLocked: True
+		TechLevel: unrestricted
+		ShortGameCheckboxLocked: True
+		ShortGameCheckboxEnabled: True
+	SpawnMPUnits:
+		DropdownLocked: True
+	FlashPaletteEffect@LIGHTNINGSTRIKE:
+		Type: LightningStrike
+	WeatherOverlay:
+		ParticleDensityFactor: 15
+		UseSquares: false
+		WindTick: 150, 550
+		ScatterDirection: 1, 2
+		Gravity: 8.00, 12.00
+		SwingOffset: 0, 0
+		SwingSpeed: 0, 0
+		SwingAmplitude: 0, 0
+		ParticleColors: 304074, 28386C, 202C60, 182C54
+		LineTailAlphaValue: 200
+		ParticleSize: 1, 2
+	GlobalLightingPaletteEffect:
+		ExcludePalettes: cursor, chrome, colorpicker, fog, shroud, alpha, effect, effecttd
+		Red: 0.7
+		Green: 0.7
+		Blue: 1.1
+		Ambient: 1.00
+	PaletteFromFile@spidercostume:
+		Name: spidercostume
+		Filename: spideypalette.pal
+		Tileset: temperat
+		ShadowIndex: 4
+		AllowModifiers: false
+	PaletteFromFile@effecttd:
+		Name: effecttd
+		Filename: spideypalette.pal
+		Tileset: temperat
+		ShadowIndex: 4
+		AllowModifiers: false
+	PaletteFromFile@pinky:
+		Name: pinky
+		Filename: pinky.pal
+		ShadowIndex: 1
+		AllowModifiers: false
+	LightPaletteRotator:
+		ExcludePalettes: terrain, effect, desert, spidercostume, effecttd
+	MusicPlaylist:
+		BackgroundMusic: rain
+		DefeatMusic: lose
+Player:
+	ConquestVictoryConditions:
+		Objective: Destroy the Egg Spawns in the middle!
+		NotificationDelay: 2000
+	PlayerExperience:
+	MissionObjectives:
+		GameOverDelay: 8000
+PDOX:
+	Tooltip:
+		Name: Rift Generator
+	Buildable:
+		Description: Teleports a group of units across the\nmap for a short time.\nKills a group of Monsters.\nRequires power to operate.\n  Special Ability: Chronoshift\nMaximum 1 can be built.
+	ChronoshiftPower@chronoshift:
+		OrderName: Chronoshift
+		Prerequisites: !pdox.germany
+		Icon: chrono
+		ChargeInterval: 120
+		Description: Rift Generator
+		LongDesc: Kills a group of monsters.\nTeleports a group of units across\nthe map for 20 seconds.
+		SelectTargetSound: selecttarget.aud
+		InsufficientPowerSound: lowpower.aud
+		BeginChargeSound: chronospherecharging.aud
+		EndChargeSound: chronosphereready.aud
+		Duration: 20
+		KillCargo: true
+		DisplayRadarPing: True
+	ChronoshiftPower@advancedchronoshift:
+		OrderName: AdvancedChronoshift
+		Prerequisites: pdox.germany
+		Icon: chrono
+		ChargeInterval: 120
+		Description: Advanced Rift Generator
+		LongDesc: Kills a group of monsters.\nTeleports a large group of units across\nthe map for 20 seconds.
+		SelectTargetSound: selecttarget.aud
+		InsufficientPowerSound: lowpower.aud
+		BeginChargeSound: chronospherecharging.aud
+		EndChargeSound: chronosphereready.aud
+		Duration: 20
+		KillCargo: true
+		DisplayRadarPing: True
+ATEK:
+	GpsPower:
+		Icon: gps
+		OneShot: true
+		ChargeInterval: 480
+		Description: GPS Satellite
+		LongDesc: Reveals map terrain and provides tactical\ninformation.
+		LaunchSound: satlaunched.aud
+		DisplayTimerStances: Ally, Neutral, Enemy
+IRON:
+	Tooltip:
+		Name: Siege Barrier
+	GrantExternalConditionPower@IRONCURTAIN:
+		Icon: invuln
+		ChargeInterval: 3000
+		Description: Invulnerability
+		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
+		Duration: 500
+		SelectTargetSound: SelectTarget
+		InsufficientPowerSound: LowPower
+		BeginChargeSound: IronCurtainReady
+		EndChargeSound: IronCurtainCharging
+		DisplayRadarPing: True
+		Condition: invulnerability
+MSLO:
+	NukePower:
+		Cursor: nuke
+		Icon: abomb
+		ChargeInterval: 13500
+		Description: Atom Bomb
+		LongDesc: Launches a devastating atomic bomb\nat a target location.
+		BeginChargeSound: abombprepping.aud
+		EndChargeSound: abombready.aud
+		SelectTargetSound: selecttarget.aud
+		InsufficientPowerSound: lowpower.aud
+		IncomingSound: atombomblaunch.aud
+		LaunchSpeechNotification: AbombLaunchDetected
+		MissileWeapon: atomic
+		SpawnOffset: 0,427,0
+		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayBeacon: True
+		DisplayRadarPing: True
+		BeaconPoster: atomicon
+		FlashType: Nuke
+FCOM:
+	Capturable:
+		Types: building
+	CaptureManager:
+
+MONSTEREGG:
+	Inherits: ^BasicBuilding
+	Huntable:
+	UpdatesPlayerStatistics:
+	Health:
+		HP: 200000
+	Valued:
+		Cost: 20000
+	Armor:
+		Type: Heavy
+	Selectable:
+		Bounds: 29,50
+	RepairableBuilding:
+		RepairStep: 700
+		PlayerExperience: 25
+	Tooltip:
+		Name: Egg
+	RenderSprites:
+		Image: godzillaegg
+	ShakeOnDeath:
+		Intensity: 50
+	SpawnActorOnDeath:
+		Actor: BOXES01
+		OwnerType: Killer
+	Explodes:
+		Type: Footprint
+		Weapon: UnitExplodePlane
+		EmptyWeapon: UnitExplodePlane
+
+^Monster:
+	Inherits@1: ^ExistsInWorld
+	Inherits@3: ^IronCurtainable
+	WithSpriteControlGroupDecoration:
+	RenderSprites:
+		Palette: effect
+	GivesBounty:
+		Percentage: 50
+	AppearsOnRadar:
+		UseLocation: true
+	Valued:
+		Cost: 500
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 10
+		Prerequisites: ~disabled
+	Tooltip:
+		GenericName: Monster
+	Mobile:
+		Locomotor: wheeled
+		TurnSpeed: 8
+		Speed: 50
+	Health:
+		HP: 30000
+	HitShape:
+		Type: Circle
+			Radius: 488
+	Armor:
+		Type: None
+	RevealsShroud:
+		Range: 5c0
+	SelectionDecorations:
+	Selectable:
+		Bounds: 24,24,0,-4
+	AutoTarget:
+		InitialStance: AttackAnything
+		ScanRadius: 10
+	WithInfantryBody:
+		IdleSequences: idle
+		MinIdleDelay: 12
+		MaxIdleDelay: 50
+		StandSequences: idle
+		MoveSequence: run
+		DefaultAttackSequence: shoot
+	HiddenUnderFog:
+	DrawLineToTarget:
+	ActorLostNotification:
+	CombatDebugOverlay:
+	Guard:
+	Guardable:
+	BodyOrientation:
+	Huntable:
+	UpdatesPlayerStatistics:
+	AttackFrontal:
+		Voice: Action
+	AttackMove:
+		Voice: Action
+	WithMuzzleOverlay:
+	Targetable:
+		TargetTypes: Ground, Vehicle
+	WithDeathAnimation:
+		DeathPaletteIsPlayerPalette: False
+		DeathSequence: die
+		UseDeathTypeSuffix: false
+	ScriptTriggers:
+	AnnounceOnKill:
+	SelfHealing:
+		PercentageStep: 1
+		Delay: 25
+		HealIfBelow: 1
+		DamageCooldown: 375
+	DeathSounds:
+		Voice: Die
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
+	Voiced:
+		VoiceSet: AntVoice
+	WithDamageOverlay:
+	CombatDebugOverlay:
+	KillsSelf:
+		RequiresCondition: invulnerability
+	Chronoshiftable:
+		ExplodeInstead: True
+
+SNIPER:
+	-Targetable:
+	-Selectable:
+	Interactable:
+	MustBeDestroyed:
+		RequiredForShortGame: True
+	AutoTarget:
+		InitialStanceAI: HoldFire
+BOXES01:
+	RenderSprites:
+		Image: crashsitefire
+	Tooltip:
+		Name: Fire
+BOXES02:
+	RenderSprites:
+		Image: crashsitefire2
+	Tooltip:
+		Name: Fire
+BOXES03:
+	RenderSprites:
+		Image: crashsitefire3
+	Tooltip:
+		Name: Fire
+BOXES04:
+	RenderSprites:
+		Image: crashsitefire4
+	Tooltip:
+		Name: Fire
+WEAPONSCRATE:
+	Inherits: ^Crate
+	RenderSprites:
+		Image: weaponscrate
+		Palette: spidercostume
+	Tooltip:
+		Name:
+	HealUnitsCrateAction:
+		Sound: NewTechnologyAcquired.aud
+		SelectionShares: 1
+		Sequence: fpower
+FLARE:
+	Interactable:
+	Immobile:
+		OccupiesSpace: false
+	RevealsShroud:
+		Range: 0c0
+		Type: CenterPosition
+	RenderSprites:
+		Image: smokland
+		Scale: 1
+	WithSpriteBody:
+		StartSequence: open
+	BodyOrientation:
+		QuantizedFacings: 1
+	HiddenUnderFog:
+		Type: CenterPosition
+	Tooltip:
+		Name: Fire
+		ShowOwnerRow: false
+	SelectionDecorations:
