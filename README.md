@@ -1,8 +1,8 @@
 # Purgatory
 Mini game for OpenRA
 This is a custom map for OpenRA project.
-It's a comp stomp style game where you fight demons and aliens while fighting for your life.
-There's LUA and yaml for scripted behavior, sprites and sounds.
-Sprites are borrowed from other maps that were mainly developed by Sin and Insert Name (fellow modders).
-Sounds were edited by me.
-To play, put all contents into one folder. No sub folder. Download and install OpenRA. Place folder in maps file and enjoy!
+King of the Hill vs the Computer gameplay.
+3 difficulties with custom units, game mechanics and sounds
+Sprites developed by Sin and Insert Name and are available in resource center.
+Sound design done by me.
+Map is hosted on OpenRA gaming platform / engine (openra.net) and downloadable here: https://resource.openra.net/maps/43876/.
